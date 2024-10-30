@@ -1,0 +1,913 @@
+2024-10-30 15:50:10.397 | INFO     | __main__:<module>:49 - args: Namespace(config='/home/yxueat/course@ust/elce6910c/hw2/Multi-View-Image-Classification/config/main.yml')
+2024-10-30 15:50:10.400 | INFO     | __main__:<module>:55 - config:
+{
+    "base": {
+        "seed": 42,
+        "root_path": "/home/yxueat/course@ust/elce6910c/hw2/Multi-View-Image-Classification",
+        "cuda_visible_devices": 1,
+        "mode": "train"
+    },
+    "model": {
+        "name": "FourViewClassifier4MNIST"
+    },
+    "train": {
+        "epochs": 80,
+        "lr": 0.001,
+        "log_interval": 100
+    },
+    "dataset": {
+        "dir": "dataset/mnist",
+        "batch_size": 64,
+        "shuffle": true,
+        "download": true
+    },
+    "quant": {
+        "bit": 8
+    }
+}
+2024-10-30 15:50:10.462 | INFO     | __main__:main:21 - device: cuda
+2024-10-30 15:50:12.153 | INFO     | src.util.trainer:train:8 - -- start training --
+2024-10-30 15:50:13.098 | INFO     | src.util.trainer:train:24 - Train Epoch: 0 [0/60000 (0%)]	Loss: 2.308300
+2024-10-30 15:50:13.948 | INFO     | src.util.trainer:train:24 - Train Epoch: 0 [6400/60000 (11%)]	Loss: 0.952663
+2024-10-30 15:50:14.801 | INFO     | src.util.trainer:train:24 - Train Epoch: 0 [12800/60000 (21%)]	Loss: 0.534786
+2024-10-30 15:50:15.657 | INFO     | src.util.trainer:train:24 - Train Epoch: 0 [19200/60000 (32%)]	Loss: 0.321741
+2024-10-30 15:50:16.504 | INFO     | src.util.trainer:train:24 - Train Epoch: 0 [25600/60000 (43%)]	Loss: 0.415770
+2024-10-30 15:50:17.357 | INFO     | src.util.trainer:train:24 - Train Epoch: 0 [32000/60000 (53%)]	Loss: 0.262968
+2024-10-30 15:50:18.205 | INFO     | src.util.trainer:train:24 - Train Epoch: 0 [38400/60000 (64%)]	Loss: 0.208289
+2024-10-30 15:50:19.069 | INFO     | src.util.trainer:train:24 - Train Epoch: 0 [44800/60000 (75%)]	Loss: 0.232253
+2024-10-30 15:50:19.924 | INFO     | src.util.trainer:train:24 - Train Epoch: 0 [51200/60000 (85%)]	Loss: 0.131490
+2024-10-30 15:50:20.771 | INFO     | src.util.trainer:train:24 - Train Epoch: 0 [57600/60000 (96%)]	Loss: 0.141112
+2024-10-30 15:50:21.097 | INFO     | src.util.trainer:train:28 - ====> Epoch: 0 Average loss: 0.4598
+2024-10-30 15:50:21.115 | INFO     | src.util.trainer:train:24 - Train Epoch: 1 [0/60000 (0%)]	Loss: 0.205655
+2024-10-30 15:50:21.962 | INFO     | src.util.trainer:train:24 - Train Epoch: 1 [6400/60000 (11%)]	Loss: 0.114263
+2024-10-30 15:50:22.817 | INFO     | src.util.trainer:train:24 - Train Epoch: 1 [12800/60000 (21%)]	Loss: 0.301872
+2024-10-30 15:50:23.674 | INFO     | src.util.trainer:train:24 - Train Epoch: 1 [19200/60000 (32%)]	Loss: 0.249629
+2024-10-30 15:50:24.517 | INFO     | src.util.trainer:train:24 - Train Epoch: 1 [25600/60000 (43%)]	Loss: 0.273079
+2024-10-30 15:50:25.371 | INFO     | src.util.trainer:train:24 - Train Epoch: 1 [32000/60000 (53%)]	Loss: 0.101641
+2024-10-30 15:50:26.226 | INFO     | src.util.trainer:train:24 - Train Epoch: 1 [38400/60000 (64%)]	Loss: 0.043235
+2024-10-30 15:50:27.089 | INFO     | src.util.trainer:train:24 - Train Epoch: 1 [44800/60000 (75%)]	Loss: 0.117865
+2024-10-30 15:50:27.946 | INFO     | src.util.trainer:train:24 - Train Epoch: 1 [51200/60000 (85%)]	Loss: 0.065112
+2024-10-30 15:50:28.813 | INFO     | src.util.trainer:train:24 - Train Epoch: 1 [57600/60000 (96%)]	Loss: 0.076586
+2024-10-30 15:50:29.140 | INFO     | src.util.trainer:train:28 - ====> Epoch: 1 Average loss: 0.1307
+2024-10-30 15:50:29.152 | INFO     | src.util.trainer:train:24 - Train Epoch: 2 [0/60000 (0%)]	Loss: 0.056034
+2024-10-30 15:50:29.981 | INFO     | src.util.trainer:train:24 - Train Epoch: 2 [6400/60000 (11%)]	Loss: 0.086296
+2024-10-30 15:50:30.812 | INFO     | src.util.trainer:train:24 - Train Epoch: 2 [12800/60000 (21%)]	Loss: 0.064309
+2024-10-30 15:50:31.657 | INFO     | src.util.trainer:train:24 - Train Epoch: 2 [19200/60000 (32%)]	Loss: 0.064396
+2024-10-30 15:50:32.512 | INFO     | src.util.trainer:train:24 - Train Epoch: 2 [25600/60000 (43%)]	Loss: 0.057592
+2024-10-30 15:50:33.368 | INFO     | src.util.trainer:train:24 - Train Epoch: 2 [32000/60000 (53%)]	Loss: 0.047074
+2024-10-30 15:50:34.218 | INFO     | src.util.trainer:train:24 - Train Epoch: 2 [38400/60000 (64%)]	Loss: 0.098607
+2024-10-30 15:50:35.066 | INFO     | src.util.trainer:train:24 - Train Epoch: 2 [44800/60000 (75%)]	Loss: 0.093860
+2024-10-30 15:50:35.920 | INFO     | src.util.trainer:train:24 - Train Epoch: 2 [51200/60000 (85%)]	Loss: 0.031218
+2024-10-30 15:50:36.772 | INFO     | src.util.trainer:train:24 - Train Epoch: 2 [57600/60000 (96%)]	Loss: 0.194585
+2024-10-30 15:50:37.089 | INFO     | src.util.trainer:train:28 - ====> Epoch: 2 Average loss: 0.0953
+2024-10-30 15:50:37.108 | INFO     | src.util.trainer:train:24 - Train Epoch: 3 [0/60000 (0%)]	Loss: 0.084432
+2024-10-30 15:50:37.995 | INFO     | src.util.trainer:train:24 - Train Epoch: 3 [6400/60000 (11%)]	Loss: 0.038863
+2024-10-30 15:50:38.898 | INFO     | src.util.trainer:train:24 - Train Epoch: 3 [12800/60000 (21%)]	Loss: 0.005194
+2024-10-30 15:50:39.791 | INFO     | src.util.trainer:train:24 - Train Epoch: 3 [19200/60000 (32%)]	Loss: 0.058338
+2024-10-30 15:50:40.677 | INFO     | src.util.trainer:train:24 - Train Epoch: 3 [25600/60000 (43%)]	Loss: 0.023660
+2024-10-30 15:50:41.565 | INFO     | src.util.trainer:train:24 - Train Epoch: 3 [32000/60000 (53%)]	Loss: 0.050569
+2024-10-30 15:50:42.458 | INFO     | src.util.trainer:train:24 - Train Epoch: 3 [38400/60000 (64%)]	Loss: 0.073916
+2024-10-30 15:50:43.348 | INFO     | src.util.trainer:train:24 - Train Epoch: 3 [44800/60000 (75%)]	Loss: 0.062396
+2024-10-30 15:50:44.204 | INFO     | src.util.trainer:train:24 - Train Epoch: 3 [51200/60000 (85%)]	Loss: 0.059311
+2024-10-30 15:50:45.053 | INFO     | src.util.trainer:train:24 - Train Epoch: 3 [57600/60000 (96%)]	Loss: 0.119013
+2024-10-30 15:50:45.366 | INFO     | src.util.trainer:train:28 - ====> Epoch: 3 Average loss: 0.0743
+2024-10-30 15:50:45.378 | INFO     | src.util.trainer:train:24 - Train Epoch: 4 [0/60000 (0%)]	Loss: 0.062499
+2024-10-30 15:50:46.062 | INFO     | src.util.trainer:train:24 - Train Epoch: 4 [6400/60000 (11%)]	Loss: 0.071551
+2024-10-30 15:50:46.759 | INFO     | src.util.trainer:train:24 - Train Epoch: 4 [12800/60000 (21%)]	Loss: 0.163998
+2024-10-30 15:50:47.454 | INFO     | src.util.trainer:train:24 - Train Epoch: 4 [19200/60000 (32%)]	Loss: 0.044945
+2024-10-30 15:50:48.151 | INFO     | src.util.trainer:train:24 - Train Epoch: 4 [25600/60000 (43%)]	Loss: 0.062723
+2024-10-30 15:50:48.846 | INFO     | src.util.trainer:train:24 - Train Epoch: 4 [32000/60000 (53%)]	Loss: 0.090773
+2024-10-30 15:50:49.522 | INFO     | src.util.trainer:train:24 - Train Epoch: 4 [38400/60000 (64%)]	Loss: 0.030502
+2024-10-30 15:50:50.200 | INFO     | src.util.trainer:train:24 - Train Epoch: 4 [44800/60000 (75%)]	Loss: 0.064098
+2024-10-30 15:50:50.873 | INFO     | src.util.trainer:train:24 - Train Epoch: 4 [51200/60000 (85%)]	Loss: 0.086200
+2024-10-30 15:50:51.556 | INFO     | src.util.trainer:train:24 - Train Epoch: 4 [57600/60000 (96%)]	Loss: 0.030075
+2024-10-30 15:50:51.819 | INFO     | src.util.trainer:train:28 - ====> Epoch: 4 Average loss: 0.0606
+2024-10-30 15:50:51.837 | INFO     | src.util.trainer:train:24 - Train Epoch: 5 [0/60000 (0%)]	Loss: 0.059021
+2024-10-30 15:50:52.674 | INFO     | src.util.trainer:train:24 - Train Epoch: 5 [6400/60000 (11%)]	Loss: 0.038308
+2024-10-30 15:50:53.524 | INFO     | src.util.trainer:train:24 - Train Epoch: 5 [12800/60000 (21%)]	Loss: 0.014882
+2024-10-30 15:50:54.372 | INFO     | src.util.trainer:train:24 - Train Epoch: 5 [19200/60000 (32%)]	Loss: 0.010850
+2024-10-30 15:50:55.224 | INFO     | src.util.trainer:train:24 - Train Epoch: 5 [25600/60000 (43%)]	Loss: 0.022301
+2024-10-30 15:50:56.076 | INFO     | src.util.trainer:train:24 - Train Epoch: 5 [32000/60000 (53%)]	Loss: 0.029540
+2024-10-30 15:50:56.930 | INFO     | src.util.trainer:train:24 - Train Epoch: 5 [38400/60000 (64%)]	Loss: 0.026424
+2024-10-30 15:50:57.775 | INFO     | src.util.trainer:train:24 - Train Epoch: 5 [44800/60000 (75%)]	Loss: 0.110157
+2024-10-30 15:50:58.634 | INFO     | src.util.trainer:train:24 - Train Epoch: 5 [51200/60000 (85%)]	Loss: 0.190335
+2024-10-30 15:50:59.481 | INFO     | src.util.trainer:train:24 - Train Epoch: 5 [57600/60000 (96%)]	Loss: 0.027239
+2024-10-30 15:50:59.799 | INFO     | src.util.trainer:train:28 - ====> Epoch: 5 Average loss: 0.0486
+2024-10-30 15:50:59.812 | INFO     | src.util.trainer:train:24 - Train Epoch: 6 [0/60000 (0%)]	Loss: 0.010679
+2024-10-30 15:51:00.648 | INFO     | src.util.trainer:train:24 - Train Epoch: 6 [6400/60000 (11%)]	Loss: 0.024566
+2024-10-30 15:51:01.589 | INFO     | src.util.trainer:train:24 - Train Epoch: 6 [12800/60000 (21%)]	Loss: 0.004853
+2024-10-30 15:51:02.484 | INFO     | src.util.trainer:train:24 - Train Epoch: 6 [19200/60000 (32%)]	Loss: 0.103029
+2024-10-30 15:51:03.380 | INFO     | src.util.trainer:train:24 - Train Epoch: 6 [25600/60000 (43%)]	Loss: 0.006564
+2024-10-30 15:51:04.248 | INFO     | src.util.trainer:train:24 - Train Epoch: 6 [32000/60000 (53%)]	Loss: 0.039058
+2024-10-30 15:51:05.116 | INFO     | src.util.trainer:train:24 - Train Epoch: 6 [38400/60000 (64%)]	Loss: 0.014702
+2024-10-30 15:51:06.044 | INFO     | src.util.trainer:train:24 - Train Epoch: 6 [44800/60000 (75%)]	Loss: 0.044461
+2024-10-30 15:51:06.912 | INFO     | src.util.trainer:train:24 - Train Epoch: 6 [51200/60000 (85%)]	Loss: 0.011292
+2024-10-30 15:51:07.781 | INFO     | src.util.trainer:train:24 - Train Epoch: 6 [57600/60000 (96%)]	Loss: 0.041558
+2024-10-30 15:51:08.100 | INFO     | src.util.trainer:train:28 - ====> Epoch: 6 Average loss: 0.0407
+2024-10-30 15:51:08.114 | INFO     | src.util.trainer:train:24 - Train Epoch: 7 [0/60000 (0%)]	Loss: 0.008215
+2024-10-30 15:51:08.924 | INFO     | src.util.trainer:train:24 - Train Epoch: 7 [6400/60000 (11%)]	Loss: 0.036490
+2024-10-30 15:51:09.771 | INFO     | src.util.trainer:train:24 - Train Epoch: 7 [12800/60000 (21%)]	Loss: 0.075019
+2024-10-30 15:51:10.619 | INFO     | src.util.trainer:train:24 - Train Epoch: 7 [19200/60000 (32%)]	Loss: 0.162739
+2024-10-30 15:51:11.468 | INFO     | src.util.trainer:train:24 - Train Epoch: 7 [25600/60000 (43%)]	Loss: 0.033134
+2024-10-30 15:51:12.315 | INFO     | src.util.trainer:train:24 - Train Epoch: 7 [32000/60000 (53%)]	Loss: 0.016719
+2024-10-30 15:51:13.158 | INFO     | src.util.trainer:train:24 - Train Epoch: 7 [38400/60000 (64%)]	Loss: 0.009733
+2024-10-30 15:51:14.000 | INFO     | src.util.trainer:train:24 - Train Epoch: 7 [44800/60000 (75%)]	Loss: 0.043016
+2024-10-30 15:51:14.852 | INFO     | src.util.trainer:train:24 - Train Epoch: 7 [51200/60000 (85%)]	Loss: 0.047989
+2024-10-30 15:51:15.708 | INFO     | src.util.trainer:train:24 - Train Epoch: 7 [57600/60000 (96%)]	Loss: 0.061020
+2024-10-30 15:51:16.025 | INFO     | src.util.trainer:train:28 - ====> Epoch: 7 Average loss: 0.0331
+2024-10-30 15:51:16.038 | INFO     | src.util.trainer:train:24 - Train Epoch: 8 [0/60000 (0%)]	Loss: 0.030772
+2024-10-30 15:51:16.892 | INFO     | src.util.trainer:train:24 - Train Epoch: 8 [6400/60000 (11%)]	Loss: 0.003593
+2024-10-30 15:51:17.743 | INFO     | src.util.trainer:train:24 - Train Epoch: 8 [12800/60000 (21%)]	Loss: 0.040321
+2024-10-30 15:51:18.596 | INFO     | src.util.trainer:train:24 - Train Epoch: 8 [19200/60000 (32%)]	Loss: 0.010962
+2024-10-30 15:51:19.447 | INFO     | src.util.trainer:train:24 - Train Epoch: 8 [25600/60000 (43%)]	Loss: 0.010108
+2024-10-30 15:51:20.300 | INFO     | src.util.trainer:train:24 - Train Epoch: 8 [32000/60000 (53%)]	Loss: 0.008252
+2024-10-30 15:51:21.146 | INFO     | src.util.trainer:train:24 - Train Epoch: 8 [38400/60000 (64%)]	Loss: 0.018285
+2024-10-30 15:51:21.993 | INFO     | src.util.trainer:train:24 - Train Epoch: 8 [44800/60000 (75%)]	Loss: 0.001305
+2024-10-30 15:51:22.836 | INFO     | src.util.trainer:train:24 - Train Epoch: 8 [51200/60000 (85%)]	Loss: 0.008050
+2024-10-30 15:51:23.685 | INFO     | src.util.trainer:train:24 - Train Epoch: 8 [57600/60000 (96%)]	Loss: 0.036769
+2024-10-30 15:51:24.001 | INFO     | src.util.trainer:train:28 - ====> Epoch: 8 Average loss: 0.0278
+2024-10-30 15:51:24.014 | INFO     | src.util.trainer:train:24 - Train Epoch: 9 [0/60000 (0%)]	Loss: 0.005436
+2024-10-30 15:51:24.840 | INFO     | src.util.trainer:train:24 - Train Epoch: 9 [6400/60000 (11%)]	Loss: 0.030465
+2024-10-30 15:51:25.668 | INFO     | src.util.trainer:train:24 - Train Epoch: 9 [12800/60000 (21%)]	Loss: 0.005318
+2024-10-30 15:51:26.499 | INFO     | src.util.trainer:train:24 - Train Epoch: 9 [19200/60000 (32%)]	Loss: 0.074940
+2024-10-30 15:51:27.307 | INFO     | src.util.trainer:train:24 - Train Epoch: 9 [25600/60000 (43%)]	Loss: 0.002148
+2024-10-30 15:51:28.125 | INFO     | src.util.trainer:train:24 - Train Epoch: 9 [32000/60000 (53%)]	Loss: 0.008361
+2024-10-30 15:51:28.992 | INFO     | src.util.trainer:train:24 - Train Epoch: 9 [38400/60000 (64%)]	Loss: 0.106339
+2024-10-30 15:51:29.916 | INFO     | src.util.trainer:train:24 - Train Epoch: 9 [44800/60000 (75%)]	Loss: 0.028084
+2024-10-30 15:51:30.765 | INFO     | src.util.trainer:train:24 - Train Epoch: 9 [51200/60000 (85%)]	Loss: 0.015192
+2024-10-30 15:51:31.608 | INFO     | src.util.trainer:train:24 - Train Epoch: 9 [57600/60000 (96%)]	Loss: 0.006003
+2024-10-30 15:51:31.923 | INFO     | src.util.trainer:train:28 - ====> Epoch: 9 Average loss: 0.0238
+2024-10-30 15:51:31.935 | INFO     | src.util.trainer:train:24 - Train Epoch: 10 [0/60000 (0%)]	Loss: 0.015248
+2024-10-30 15:51:32.774 | INFO     | src.util.trainer:train:24 - Train Epoch: 10 [6400/60000 (11%)]	Loss: 0.009692
+2024-10-30 15:51:33.624 | INFO     | src.util.trainer:train:24 - Train Epoch: 10 [12800/60000 (21%)]	Loss: 0.008354
+2024-10-30 15:51:34.472 | INFO     | src.util.trainer:train:24 - Train Epoch: 10 [19200/60000 (32%)]	Loss: 0.004621
+2024-10-30 15:51:35.320 | INFO     | src.util.trainer:train:24 - Train Epoch: 10 [25600/60000 (43%)]	Loss: 0.040586
+2024-10-30 15:51:36.170 | INFO     | src.util.trainer:train:24 - Train Epoch: 10 [32000/60000 (53%)]	Loss: 0.078008
+2024-10-30 15:51:37.014 | INFO     | src.util.trainer:train:24 - Train Epoch: 10 [38400/60000 (64%)]	Loss: 0.074894
+2024-10-30 15:51:37.865 | INFO     | src.util.trainer:train:24 - Train Epoch: 10 [44800/60000 (75%)]	Loss: 0.035162
+2024-10-30 15:51:38.713 | INFO     | src.util.trainer:train:24 - Train Epoch: 10 [51200/60000 (85%)]	Loss: 0.010765
+2024-10-30 15:51:39.560 | INFO     | src.util.trainer:train:24 - Train Epoch: 10 [57600/60000 (96%)]	Loss: 0.008714
+2024-10-30 15:51:39.878 | INFO     | src.util.trainer:train:28 - ====> Epoch: 10 Average loss: 0.0198
+2024-10-30 15:51:39.890 | INFO     | src.util.trainer:train:24 - Train Epoch: 11 [0/60000 (0%)]	Loss: 0.001040
+2024-10-30 15:51:40.563 | INFO     | src.util.trainer:train:24 - Train Epoch: 11 [6400/60000 (11%)]	Loss: 0.003299
+2024-10-30 15:51:41.233 | INFO     | src.util.trainer:train:24 - Train Epoch: 11 [12800/60000 (21%)]	Loss: 0.003315
+2024-10-30 15:51:41.921 | INFO     | src.util.trainer:train:24 - Train Epoch: 11 [19200/60000 (32%)]	Loss: 0.024065
+2024-10-30 15:51:42.601 | INFO     | src.util.trainer:train:24 - Train Epoch: 11 [25600/60000 (43%)]	Loss: 0.013728
+2024-10-30 15:51:43.274 | INFO     | src.util.trainer:train:24 - Train Epoch: 11 [32000/60000 (53%)]	Loss: 0.003503
+2024-10-30 15:51:43.958 | INFO     | src.util.trainer:train:24 - Train Epoch: 11 [38400/60000 (64%)]	Loss: 0.008766
+2024-10-30 15:51:44.641 | INFO     | src.util.trainer:train:24 - Train Epoch: 11 [44800/60000 (75%)]	Loss: 0.011706
+2024-10-30 15:51:45.320 | INFO     | src.util.trainer:train:24 - Train Epoch: 11 [51200/60000 (85%)]	Loss: 0.001021
+2024-10-30 15:51:46.000 | INFO     | src.util.trainer:train:24 - Train Epoch: 11 [57600/60000 (96%)]	Loss: 0.006820
+2024-10-30 15:51:46.252 | INFO     | src.util.trainer:train:28 - ====> Epoch: 11 Average loss: 0.0160
+2024-10-30 15:51:46.264 | INFO     | src.util.trainer:train:24 - Train Epoch: 12 [0/60000 (0%)]	Loss: 0.013139
+2024-10-30 15:51:46.949 | INFO     | src.util.trainer:train:24 - Train Epoch: 12 [6400/60000 (11%)]	Loss: 0.005285
+2024-10-30 15:51:47.625 | INFO     | src.util.trainer:train:24 - Train Epoch: 12 [12800/60000 (21%)]	Loss: 0.007509
+2024-10-30 15:51:48.309 | INFO     | src.util.trainer:train:24 - Train Epoch: 12 [19200/60000 (32%)]	Loss: 0.010192
+2024-10-30 15:51:49.004 | INFO     | src.util.trainer:train:24 - Train Epoch: 12 [25600/60000 (43%)]	Loss: 0.029451
+2024-10-30 15:51:49.685 | INFO     | src.util.trainer:train:24 - Train Epoch: 12 [32000/60000 (53%)]	Loss: 0.000499
+2024-10-30 15:51:50.371 | INFO     | src.util.trainer:train:24 - Train Epoch: 12 [38400/60000 (64%)]	Loss: 0.012343
+2024-10-30 15:51:51.056 | INFO     | src.util.trainer:train:24 - Train Epoch: 12 [44800/60000 (75%)]	Loss: 0.032689
+2024-10-30 15:51:51.838 | INFO     | src.util.trainer:train:24 - Train Epoch: 12 [51200/60000 (85%)]	Loss: 0.003602
+2024-10-30 15:51:52.688 | INFO     | src.util.trainer:train:24 - Train Epoch: 12 [57600/60000 (96%)]	Loss: 0.010270
+2024-10-30 15:51:53.003 | INFO     | src.util.trainer:train:28 - ====> Epoch: 12 Average loss: 0.0155
+2024-10-30 15:51:53.016 | INFO     | src.util.trainer:train:24 - Train Epoch: 13 [0/60000 (0%)]	Loss: 0.002421
+2024-10-30 15:51:53.819 | INFO     | src.util.trainer:train:24 - Train Epoch: 13 [6400/60000 (11%)]	Loss: 0.001135
+2024-10-30 15:51:54.654 | INFO     | src.util.trainer:train:24 - Train Epoch: 13 [12800/60000 (21%)]	Loss: 0.007612
+2024-10-30 15:51:55.494 | INFO     | src.util.trainer:train:24 - Train Epoch: 13 [19200/60000 (32%)]	Loss: 0.000568
+2024-10-30 15:51:56.340 | INFO     | src.util.trainer:train:24 - Train Epoch: 13 [25600/60000 (43%)]	Loss: 0.002945
+2024-10-30 15:51:57.188 | INFO     | src.util.trainer:train:24 - Train Epoch: 13 [32000/60000 (53%)]	Loss: 0.011654
+2024-10-30 15:51:58.034 | INFO     | src.util.trainer:train:24 - Train Epoch: 13 [38400/60000 (64%)]	Loss: 0.007927
+2024-10-30 15:51:58.885 | INFO     | src.util.trainer:train:24 - Train Epoch: 13 [44800/60000 (75%)]	Loss: 0.036892
+2024-10-30 15:51:59.730 | INFO     | src.util.trainer:train:24 - Train Epoch: 13 [51200/60000 (85%)]	Loss: 0.002015
+2024-10-30 15:52:00.580 | INFO     | src.util.trainer:train:24 - Train Epoch: 13 [57600/60000 (96%)]	Loss: 0.012928
+2024-10-30 15:52:00.896 | INFO     | src.util.trainer:train:28 - ====> Epoch: 13 Average loss: 0.0117
+2024-10-30 15:52:00.909 | INFO     | src.util.trainer:train:24 - Train Epoch: 14 [0/60000 (0%)]	Loss: 0.005272
+2024-10-30 15:52:01.736 | INFO     | src.util.trainer:train:24 - Train Epoch: 14 [6400/60000 (11%)]	Loss: 0.022436
+2024-10-30 15:52:02.573 | INFO     | src.util.trainer:train:24 - Train Epoch: 14 [12800/60000 (21%)]	Loss: 0.004591
+2024-10-30 15:52:03.416 | INFO     | src.util.trainer:train:24 - Train Epoch: 14 [19200/60000 (32%)]	Loss: 0.018196
+2024-10-30 15:52:04.260 | INFO     | src.util.trainer:train:24 - Train Epoch: 14 [25600/60000 (43%)]	Loss: 0.006559
+2024-10-30 15:52:05.106 | INFO     | src.util.trainer:train:24 - Train Epoch: 14 [32000/60000 (53%)]	Loss: 0.022667
+2024-10-30 15:52:05.943 | INFO     | src.util.trainer:train:24 - Train Epoch: 14 [38400/60000 (64%)]	Loss: 0.019277
+2024-10-30 15:52:06.789 | INFO     | src.util.trainer:train:24 - Train Epoch: 14 [44800/60000 (75%)]	Loss: 0.008956
+2024-10-30 15:52:07.638 | INFO     | src.util.trainer:train:24 - Train Epoch: 14 [51200/60000 (85%)]	Loss: 0.021412
+2024-10-30 15:52:08.561 | INFO     | src.util.trainer:train:24 - Train Epoch: 14 [57600/60000 (96%)]	Loss: 0.003767
+2024-10-30 15:52:08.878 | INFO     | src.util.trainer:train:28 - ====> Epoch: 14 Average loss: 0.0117
+2024-10-30 15:52:08.892 | INFO     | src.util.trainer:train:24 - Train Epoch: 15 [0/60000 (0%)]	Loss: 0.001019
+2024-10-30 15:52:09.722 | INFO     | src.util.trainer:train:24 - Train Epoch: 15 [6400/60000 (11%)]	Loss: 0.000952
+2024-10-30 15:52:10.539 | INFO     | src.util.trainer:train:24 - Train Epoch: 15 [12800/60000 (21%)]	Loss: 0.003941
+2024-10-30 15:52:11.384 | INFO     | src.util.trainer:train:24 - Train Epoch: 15 [19200/60000 (32%)]	Loss: 0.000324
+2024-10-30 15:52:12.233 | INFO     | src.util.trainer:train:24 - Train Epoch: 15 [25600/60000 (43%)]	Loss: 0.000627
+2024-10-30 15:52:13.076 | INFO     | src.util.trainer:train:24 - Train Epoch: 15 [32000/60000 (53%)]	Loss: 0.000879
+2024-10-30 15:52:13.922 | INFO     | src.util.trainer:train:24 - Train Epoch: 15 [38400/60000 (64%)]	Loss: 0.001807
+2024-10-30 15:52:14.756 | INFO     | src.util.trainer:train:24 - Train Epoch: 15 [44800/60000 (75%)]	Loss: 0.005206
+2024-10-30 15:52:15.604 | INFO     | src.util.trainer:train:24 - Train Epoch: 15 [51200/60000 (85%)]	Loss: 0.016822
+2024-10-30 15:52:16.452 | INFO     | src.util.trainer:train:24 - Train Epoch: 15 [57600/60000 (96%)]	Loss: 0.000873
+2024-10-30 15:52:16.766 | INFO     | src.util.trainer:train:28 - ====> Epoch: 15 Average loss: 0.0105
+2024-10-30 15:52:16.779 | INFO     | src.util.trainer:train:24 - Train Epoch: 16 [0/60000 (0%)]	Loss: 0.013204
+2024-10-30 15:52:17.748 | INFO     | src.util.trainer:train:24 - Train Epoch: 16 [6400/60000 (11%)]	Loss: 0.000356
+2024-10-30 15:52:18.635 | INFO     | src.util.trainer:train:24 - Train Epoch: 16 [12800/60000 (21%)]	Loss: 0.034789
+2024-10-30 15:52:19.533 | INFO     | src.util.trainer:train:24 - Train Epoch: 16 [19200/60000 (32%)]	Loss: 0.002412
+2024-10-30 15:52:20.395 | INFO     | src.util.trainer:train:24 - Train Epoch: 16 [25600/60000 (43%)]	Loss: 0.000292
+2024-10-30 15:52:21.246 | INFO     | src.util.trainer:train:24 - Train Epoch: 16 [32000/60000 (53%)]	Loss: 0.010886
+2024-10-30 15:52:22.104 | INFO     | src.util.trainer:train:24 - Train Epoch: 16 [38400/60000 (64%)]	Loss: 0.000386
+2024-10-30 15:52:22.973 | INFO     | src.util.trainer:train:24 - Train Epoch: 16 [44800/60000 (75%)]	Loss: 0.010592
+2024-10-30 15:52:23.837 | INFO     | src.util.trainer:train:24 - Train Epoch: 16 [51200/60000 (85%)]	Loss: 0.000359
+2024-10-30 15:52:24.688 | INFO     | src.util.trainer:train:24 - Train Epoch: 16 [57600/60000 (96%)]	Loss: 0.003654
+2024-10-30 15:52:25.007 | INFO     | src.util.trainer:train:28 - ====> Epoch: 16 Average loss: 0.0083
+2024-10-30 15:52:25.020 | INFO     | src.util.trainer:train:24 - Train Epoch: 17 [0/60000 (0%)]	Loss: 0.001363
+2024-10-30 15:52:25.752 | INFO     | src.util.trainer:train:24 - Train Epoch: 17 [6400/60000 (11%)]	Loss: 0.100287
+2024-10-30 15:52:26.486 | INFO     | src.util.trainer:train:24 - Train Epoch: 17 [12800/60000 (21%)]	Loss: 0.001016
+2024-10-30 15:52:27.224 | INFO     | src.util.trainer:train:24 - Train Epoch: 17 [19200/60000 (32%)]	Loss: 0.002977
+2024-10-30 15:52:27.984 | INFO     | src.util.trainer:train:24 - Train Epoch: 17 [25600/60000 (43%)]	Loss: 0.000585
+2024-10-30 15:52:29.168 | INFO     | src.util.trainer:train:24 - Train Epoch: 17 [32000/60000 (53%)]	Loss: 0.001338
+2024-10-30 15:52:29.962 | INFO     | src.util.trainer:train:24 - Train Epoch: 17 [38400/60000 (64%)]	Loss: 0.002188
+2024-10-30 15:52:30.796 | INFO     | src.util.trainer:train:24 - Train Epoch: 17 [44800/60000 (75%)]	Loss: 0.000081
+2024-10-30 15:52:31.656 | INFO     | src.util.trainer:train:24 - Train Epoch: 17 [51200/60000 (85%)]	Loss: 0.004447
+2024-10-30 15:52:32.517 | INFO     | src.util.trainer:train:24 - Train Epoch: 17 [57600/60000 (96%)]	Loss: 0.001197
+2024-10-30 15:52:32.841 | INFO     | src.util.trainer:train:28 - ====> Epoch: 17 Average loss: 0.0085
+2024-10-30 15:52:32.855 | INFO     | src.util.trainer:train:24 - Train Epoch: 18 [0/60000 (0%)]	Loss: 0.001941
+2024-10-30 15:52:33.823 | INFO     | src.util.trainer:train:24 - Train Epoch: 18 [6400/60000 (11%)]	Loss: 0.074287
+2024-10-30 15:52:34.718 | INFO     | src.util.trainer:train:24 - Train Epoch: 18 [12800/60000 (21%)]	Loss: 0.001090
+2024-10-30 15:52:35.624 | INFO     | src.util.trainer:train:24 - Train Epoch: 18 [19200/60000 (32%)]	Loss: 0.060296
+2024-10-30 15:52:36.520 | INFO     | src.util.trainer:train:24 - Train Epoch: 18 [25600/60000 (43%)]	Loss: 0.000375
+2024-10-30 15:52:37.445 | INFO     | src.util.trainer:train:24 - Train Epoch: 18 [32000/60000 (53%)]	Loss: 0.044778
+2024-10-30 15:52:38.303 | INFO     | src.util.trainer:train:24 - Train Epoch: 18 [38400/60000 (64%)]	Loss: 0.001235
+2024-10-30 15:52:39.173 | INFO     | src.util.trainer:train:24 - Train Epoch: 18 [44800/60000 (75%)]	Loss: 0.000110
+2024-10-30 15:52:40.037 | INFO     | src.util.trainer:train:24 - Train Epoch: 18 [51200/60000 (85%)]	Loss: 0.036455
+2024-10-30 15:52:40.893 | INFO     | src.util.trainer:train:24 - Train Epoch: 18 [57600/60000 (96%)]	Loss: 0.017053
+2024-10-30 15:52:41.262 | INFO     | src.util.trainer:train:28 - ====> Epoch: 18 Average loss: 0.0082
+2024-10-30 15:52:41.293 | INFO     | src.util.trainer:train:24 - Train Epoch: 19 [0/60000 (0%)]	Loss: 0.016611
+2024-10-30 15:52:42.183 | INFO     | src.util.trainer:train:24 - Train Epoch: 19 [6400/60000 (11%)]	Loss: 0.000129
+2024-10-30 15:52:43.040 | INFO     | src.util.trainer:train:24 - Train Epoch: 19 [12800/60000 (21%)]	Loss: 0.000277
+2024-10-30 15:52:43.898 | INFO     | src.util.trainer:train:24 - Train Epoch: 19 [19200/60000 (32%)]	Loss: 0.004405
+2024-10-30 15:52:44.749 | INFO     | src.util.trainer:train:24 - Train Epoch: 19 [25600/60000 (43%)]	Loss: 0.002035
+2024-10-30 15:52:45.691 | INFO     | src.util.trainer:train:24 - Train Epoch: 19 [32000/60000 (53%)]	Loss: 0.014579
+2024-10-30 15:52:46.610 | INFO     | src.util.trainer:train:24 - Train Epoch: 19 [38400/60000 (64%)]	Loss: 0.010084
+2024-10-30 15:52:47.532 | INFO     | src.util.trainer:train:24 - Train Epoch: 19 [44800/60000 (75%)]	Loss: 0.001186
+2024-10-30 15:52:48.452 | INFO     | src.util.trainer:train:24 - Train Epoch: 19 [51200/60000 (85%)]	Loss: 0.005268
+2024-10-30 15:52:49.429 | INFO     | src.util.trainer:train:24 - Train Epoch: 19 [57600/60000 (96%)]	Loss: 0.000391
+2024-10-30 15:52:49.873 | INFO     | src.util.trainer:train:28 - ====> Epoch: 19 Average loss: 0.0080
+2024-10-30 15:52:49.892 | INFO     | src.util.trainer:train:24 - Train Epoch: 20 [0/60000 (0%)]	Loss: 0.000685
+2024-10-30 15:52:50.748 | INFO     | src.util.trainer:train:24 - Train Epoch: 20 [6400/60000 (11%)]	Loss: 0.000423
+2024-10-30 15:52:51.605 | INFO     | src.util.trainer:train:24 - Train Epoch: 20 [12800/60000 (21%)]	Loss: 0.000910
+2024-10-30 15:52:52.464 | INFO     | src.util.trainer:train:24 - Train Epoch: 20 [19200/60000 (32%)]	Loss: 0.000086
+2024-10-30 15:52:53.318 | INFO     | src.util.trainer:train:24 - Train Epoch: 20 [25600/60000 (43%)]	Loss: 0.000126
+2024-10-30 15:52:54.201 | INFO     | src.util.trainer:train:24 - Train Epoch: 20 [32000/60000 (53%)]	Loss: 0.001208
+2024-10-30 15:52:55.055 | INFO     | src.util.trainer:train:24 - Train Epoch: 20 [38400/60000 (64%)]	Loss: 0.000467
+2024-10-30 15:52:55.923 | INFO     | src.util.trainer:train:24 - Train Epoch: 20 [44800/60000 (75%)]	Loss: 0.002078
+2024-10-30 15:52:56.788 | INFO     | src.util.trainer:train:24 - Train Epoch: 20 [51200/60000 (85%)]	Loss: 0.001988
+2024-10-30 15:52:57.648 | INFO     | src.util.trainer:train:24 - Train Epoch: 20 [57600/60000 (96%)]	Loss: 0.000914
+2024-10-30 15:52:57.973 | INFO     | src.util.trainer:train:28 - ====> Epoch: 20 Average loss: 0.0055
+2024-10-30 15:52:57.986 | INFO     | src.util.trainer:train:24 - Train Epoch: 21 [0/60000 (0%)]	Loss: 0.002887
+2024-10-30 15:52:58.904 | INFO     | src.util.trainer:train:24 - Train Epoch: 21 [6400/60000 (11%)]	Loss: 0.000704
+2024-10-30 15:52:59.754 | INFO     | src.util.trainer:train:24 - Train Epoch: 21 [12800/60000 (21%)]	Loss: 0.000041
+2024-10-30 15:53:00.607 | INFO     | src.util.trainer:train:24 - Train Epoch: 21 [19200/60000 (32%)]	Loss: 0.057086
+2024-10-30 15:53:01.455 | INFO     | src.util.trainer:train:24 - Train Epoch: 21 [25600/60000 (43%)]	Loss: 0.001120
+2024-10-30 15:53:02.305 | INFO     | src.util.trainer:train:24 - Train Epoch: 21 [32000/60000 (53%)]	Loss: 0.027268
+2024-10-30 15:53:03.253 | INFO     | src.util.trainer:train:24 - Train Epoch: 21 [38400/60000 (64%)]	Loss: 0.000977
+2024-10-30 15:53:04.114 | INFO     | src.util.trainer:train:24 - Train Epoch: 21 [44800/60000 (75%)]	Loss: 0.000453
+2024-10-30 15:53:04.969 | INFO     | src.util.trainer:train:24 - Train Epoch: 21 [51200/60000 (85%)]	Loss: 0.034432
+2024-10-30 15:53:05.822 | INFO     | src.util.trainer:train:24 - Train Epoch: 21 [57600/60000 (96%)]	Loss: 0.000061
+2024-10-30 15:53:06.139 | INFO     | src.util.trainer:train:28 - ====> Epoch: 21 Average loss: 0.0067
+2024-10-30 15:53:06.153 | INFO     | src.util.trainer:train:24 - Train Epoch: 22 [0/60000 (0%)]	Loss: 0.010955
+2024-10-30 15:53:07.148 | INFO     | src.util.trainer:train:24 - Train Epoch: 22 [6400/60000 (11%)]	Loss: 0.002132
+2024-10-30 15:53:08.006 | INFO     | src.util.trainer:train:24 - Train Epoch: 22 [12800/60000 (21%)]	Loss: 0.005738
+2024-10-30 15:53:08.864 | INFO     | src.util.trainer:train:24 - Train Epoch: 22 [19200/60000 (32%)]	Loss: 0.000523
+2024-10-30 15:53:09.724 | INFO     | src.util.trainer:train:24 - Train Epoch: 22 [25600/60000 (43%)]	Loss: 0.001756
+2024-10-30 15:53:10.578 | INFO     | src.util.trainer:train:24 - Train Epoch: 22 [32000/60000 (53%)]	Loss: 0.000319
+2024-10-30 15:53:11.428 | INFO     | src.util.trainer:train:24 - Train Epoch: 22 [38400/60000 (64%)]	Loss: 0.058595
+2024-10-30 15:53:12.273 | INFO     | src.util.trainer:train:24 - Train Epoch: 22 [44800/60000 (75%)]	Loss: 0.000717
+2024-10-30 15:53:13.243 | INFO     | src.util.trainer:train:24 - Train Epoch: 22 [51200/60000 (85%)]	Loss: 0.001253
+2024-10-30 15:53:14.088 | INFO     | src.util.trainer:train:24 - Train Epoch: 22 [57600/60000 (96%)]	Loss: 0.021992
+2024-10-30 15:53:14.410 | INFO     | src.util.trainer:train:28 - ====> Epoch: 22 Average loss: 0.0065
+2024-10-30 15:53:14.422 | INFO     | src.util.trainer:train:24 - Train Epoch: 23 [0/60000 (0%)]	Loss: 0.001361
+2024-10-30 15:53:15.120 | INFO     | src.util.trainer:train:24 - Train Epoch: 23 [6400/60000 (11%)]	Loss: 0.004444
+2024-10-30 15:53:15.814 | INFO     | src.util.trainer:train:24 - Train Epoch: 23 [12800/60000 (21%)]	Loss: 0.000169
+2024-10-30 15:53:16.509 | INFO     | src.util.trainer:train:24 - Train Epoch: 23 [19200/60000 (32%)]	Loss: 0.000281
+2024-10-30 15:53:17.226 | INFO     | src.util.trainer:train:24 - Train Epoch: 23 [25600/60000 (43%)]	Loss: 0.001607
+2024-10-30 15:53:17.917 | INFO     | src.util.trainer:train:24 - Train Epoch: 23 [32000/60000 (53%)]	Loss: 0.001199
+2024-10-30 15:53:18.615 | INFO     | src.util.trainer:train:24 - Train Epoch: 23 [38400/60000 (64%)]	Loss: 0.002128
+2024-10-30 15:53:19.312 | INFO     | src.util.trainer:train:24 - Train Epoch: 23 [44800/60000 (75%)]	Loss: 0.000858
+2024-10-30 15:53:20.094 | INFO     | src.util.trainer:train:24 - Train Epoch: 23 [51200/60000 (85%)]	Loss: 0.000149
+2024-10-30 15:53:21.183 | INFO     | src.util.trainer:train:24 - Train Epoch: 23 [57600/60000 (96%)]	Loss: 0.007574
+2024-10-30 15:53:21.501 | INFO     | src.util.trainer:train:28 - ====> Epoch: 23 Average loss: 0.0038
+2024-10-30 15:53:21.513 | INFO     | src.util.trainer:train:24 - Train Epoch: 24 [0/60000 (0%)]	Loss: 0.000269
+2024-10-30 15:53:22.414 | INFO     | src.util.trainer:train:24 - Train Epoch: 24 [6400/60000 (11%)]	Loss: 0.011593
+2024-10-30 15:53:23.336 | INFO     | src.util.trainer:train:24 - Train Epoch: 24 [12800/60000 (21%)]	Loss: 0.001062
+2024-10-30 15:53:24.238 | INFO     | src.util.trainer:train:24 - Train Epoch: 24 [19200/60000 (32%)]	Loss: 0.000275
+2024-10-30 15:53:25.141 | INFO     | src.util.trainer:train:24 - Train Epoch: 24 [25600/60000 (43%)]	Loss: 0.000143
+2024-10-30 15:53:26.049 | INFO     | src.util.trainer:train:24 - Train Epoch: 24 [32000/60000 (53%)]	Loss: 0.011244
+2024-10-30 15:53:26.958 | INFO     | src.util.trainer:train:24 - Train Epoch: 24 [38400/60000 (64%)]	Loss: 0.001427
+2024-10-30 15:53:27.868 | INFO     | src.util.trainer:train:24 - Train Epoch: 24 [44800/60000 (75%)]	Loss: 0.003151
+2024-10-30 15:53:29.027 | INFO     | src.util.trainer:train:24 - Train Epoch: 24 [51200/60000 (85%)]	Loss: 0.000024
+2024-10-30 15:53:29.965 | INFO     | src.util.trainer:train:24 - Train Epoch: 24 [57600/60000 (96%)]	Loss: 0.004481
+2024-10-30 15:53:30.283 | INFO     | src.util.trainer:train:28 - ====> Epoch: 24 Average loss: 0.0075
+2024-10-30 15:53:30.295 | INFO     | src.util.trainer:train:24 - Train Epoch: 25 [0/60000 (0%)]	Loss: 0.005803
+2024-10-30 15:53:31.149 | INFO     | src.util.trainer:train:24 - Train Epoch: 25 [6400/60000 (11%)]	Loss: 0.000239
+2024-10-30 15:53:32.006 | INFO     | src.util.trainer:train:24 - Train Epoch: 25 [12800/60000 (21%)]	Loss: 0.004765
+2024-10-30 15:53:32.861 | INFO     | src.util.trainer:train:24 - Train Epoch: 25 [19200/60000 (32%)]	Loss: 0.000022
+2024-10-30 15:53:33.711 | INFO     | src.util.trainer:train:24 - Train Epoch: 25 [25600/60000 (43%)]	Loss: 0.000249
+2024-10-30 15:53:34.624 | INFO     | src.util.trainer:train:24 - Train Epoch: 25 [32000/60000 (53%)]	Loss: 0.001234
+2024-10-30 15:53:35.461 | INFO     | src.util.trainer:train:24 - Train Epoch: 25 [38400/60000 (64%)]	Loss: 0.000259
+2024-10-30 15:53:36.340 | INFO     | src.util.trainer:train:24 - Train Epoch: 25 [44800/60000 (75%)]	Loss: 0.004572
+2024-10-30 15:53:37.262 | INFO     | src.util.trainer:train:24 - Train Epoch: 25 [51200/60000 (85%)]	Loss: 0.000401
+2024-10-30 15:53:38.413 | INFO     | src.util.trainer:train:24 - Train Epoch: 25 [57600/60000 (96%)]	Loss: 0.000115
+2024-10-30 15:53:38.707 | INFO     | src.util.trainer:train:28 - ====> Epoch: 25 Average loss: 0.0051
+2024-10-30 15:53:38.718 | INFO     | src.util.trainer:train:24 - Train Epoch: 26 [0/60000 (0%)]	Loss: 0.072006
+2024-10-30 15:53:39.521 | INFO     | src.util.trainer:train:24 - Train Epoch: 26 [6400/60000 (11%)]	Loss: 0.000031
+2024-10-30 15:53:40.379 | INFO     | src.util.trainer:train:24 - Train Epoch: 26 [12800/60000 (21%)]	Loss: 0.000230
+2024-10-30 15:53:41.233 | INFO     | src.util.trainer:train:24 - Train Epoch: 26 [19200/60000 (32%)]	Loss: 0.000332
+2024-10-30 15:53:42.088 | INFO     | src.util.trainer:train:24 - Train Epoch: 26 [25600/60000 (43%)]	Loss: 0.001286
+2024-10-30 15:53:42.945 | INFO     | src.util.trainer:train:24 - Train Epoch: 26 [32000/60000 (53%)]	Loss: 0.001381
+2024-10-30 15:53:43.818 | INFO     | src.util.trainer:train:24 - Train Epoch: 26 [38400/60000 (64%)]	Loss: 0.000715
+2024-10-30 15:53:44.690 | INFO     | src.util.trainer:train:24 - Train Epoch: 26 [44800/60000 (75%)]	Loss: 0.000435
+2024-10-30 15:53:45.565 | INFO     | src.util.trainer:train:24 - Train Epoch: 26 [51200/60000 (85%)]	Loss: 0.004365
+2024-10-30 15:53:46.752 | INFO     | src.util.trainer:train:24 - Train Epoch: 26 [57600/60000 (96%)]	Loss: 0.000151
+2024-10-30 15:53:47.091 | INFO     | src.util.trainer:train:28 - ====> Epoch: 26 Average loss: 0.0037
+2024-10-30 15:53:47.103 | INFO     | src.util.trainer:train:24 - Train Epoch: 27 [0/60000 (0%)]	Loss: 0.001254
+2024-10-30 15:53:47.823 | INFO     | src.util.trainer:train:24 - Train Epoch: 27 [6400/60000 (11%)]	Loss: 0.005003
+2024-10-30 15:53:48.562 | INFO     | src.util.trainer:train:24 - Train Epoch: 27 [12800/60000 (21%)]	Loss: 0.000040
+2024-10-30 15:53:49.400 | INFO     | src.util.trainer:train:24 - Train Epoch: 27 [19200/60000 (32%)]	Loss: 0.003265
+2024-10-30 15:53:50.257 | INFO     | src.util.trainer:train:24 - Train Epoch: 27 [25600/60000 (43%)]	Loss: 0.000583
+2024-10-30 15:53:51.105 | INFO     | src.util.trainer:train:24 - Train Epoch: 27 [32000/60000 (53%)]	Loss: 0.020417
+2024-10-30 15:53:51.973 | INFO     | src.util.trainer:train:24 - Train Epoch: 27 [38400/60000 (64%)]	Loss: 0.000583
+2024-10-30 15:53:52.873 | INFO     | src.util.trainer:train:24 - Train Epoch: 27 [44800/60000 (75%)]	Loss: 0.000368
+2024-10-30 15:53:53.743 | INFO     | src.util.trainer:train:24 - Train Epoch: 27 [51200/60000 (85%)]	Loss: 0.000360
+2024-10-30 15:53:54.676 | INFO     | src.util.trainer:train:24 - Train Epoch: 27 [57600/60000 (96%)]	Loss: 0.000381
+2024-10-30 15:53:55.182 | INFO     | src.util.trainer:train:28 - ====> Epoch: 27 Average loss: 0.0052
+2024-10-30 15:53:55.194 | INFO     | src.util.trainer:train:24 - Train Epoch: 28 [0/60000 (0%)]	Loss: 0.001346
+2024-10-30 15:53:56.076 | INFO     | src.util.trainer:train:24 - Train Epoch: 28 [6400/60000 (11%)]	Loss: 0.038570
+2024-10-30 15:53:56.915 | INFO     | src.util.trainer:train:24 - Train Epoch: 28 [12800/60000 (21%)]	Loss: 0.000047
+2024-10-30 15:53:57.764 | INFO     | src.util.trainer:train:24 - Train Epoch: 28 [19200/60000 (32%)]	Loss: 0.000596
+2024-10-30 15:53:58.618 | INFO     | src.util.trainer:train:24 - Train Epoch: 28 [25600/60000 (43%)]	Loss: 0.000217
+2024-10-30 15:53:59.465 | INFO     | src.util.trainer:train:24 - Train Epoch: 28 [32000/60000 (53%)]	Loss: 0.000027
+2024-10-30 15:54:00.307 | INFO     | src.util.trainer:train:24 - Train Epoch: 28 [38400/60000 (64%)]	Loss: 0.001357
+2024-10-30 15:54:01.149 | INFO     | src.util.trainer:train:24 - Train Epoch: 28 [44800/60000 (75%)]	Loss: 0.001065
+2024-10-30 15:54:02.007 | INFO     | src.util.trainer:train:24 - Train Epoch: 28 [51200/60000 (85%)]	Loss: 0.001511
+2024-10-30 15:54:02.859 | INFO     | src.util.trainer:train:24 - Train Epoch: 28 [57600/60000 (96%)]	Loss: 0.002145
+2024-10-30 15:54:03.214 | INFO     | src.util.trainer:train:28 - ====> Epoch: 28 Average loss: 0.0049
+2024-10-30 15:54:03.242 | INFO     | src.util.trainer:train:24 - Train Epoch: 29 [0/60000 (0%)]	Loss: 0.000651
+2024-10-30 15:54:04.369 | INFO     | src.util.trainer:train:24 - Train Epoch: 29 [6400/60000 (11%)]	Loss: 0.016805
+2024-10-30 15:54:05.212 | INFO     | src.util.trainer:train:24 - Train Epoch: 29 [12800/60000 (21%)]	Loss: 0.000032
+2024-10-30 15:54:06.063 | INFO     | src.util.trainer:train:24 - Train Epoch: 29 [19200/60000 (32%)]	Loss: 0.001801
+2024-10-30 15:54:06.917 | INFO     | src.util.trainer:train:24 - Train Epoch: 29 [25600/60000 (43%)]	Loss: 0.011819
+2024-10-30 15:54:07.778 | INFO     | src.util.trainer:train:24 - Train Epoch: 29 [32000/60000 (53%)]	Loss: 0.002924
+2024-10-30 15:54:08.614 | INFO     | src.util.trainer:train:24 - Train Epoch: 29 [38400/60000 (64%)]	Loss: 0.000058
+2024-10-30 15:54:09.489 | INFO     | src.util.trainer:train:24 - Train Epoch: 29 [44800/60000 (75%)]	Loss: 0.001598
+2024-10-30 15:54:10.365 | INFO     | src.util.trainer:train:24 - Train Epoch: 29 [51200/60000 (85%)]	Loss: 0.004635
+2024-10-30 15:54:11.239 | INFO     | src.util.trainer:train:24 - Train Epoch: 29 [57600/60000 (96%)]	Loss: 0.001809
+2024-10-30 15:54:11.566 | INFO     | src.util.trainer:train:28 - ====> Epoch: 29 Average loss: 0.0036
+2024-10-30 15:54:11.580 | INFO     | src.util.trainer:train:24 - Train Epoch: 30 [0/60000 (0%)]	Loss: 0.000135
+2024-10-30 15:54:12.440 | INFO     | src.util.trainer:train:24 - Train Epoch: 30 [6400/60000 (11%)]	Loss: 0.002002
+2024-10-30 15:54:13.597 | INFO     | src.util.trainer:train:24 - Train Epoch: 30 [12800/60000 (21%)]	Loss: 0.001388
+2024-10-30 15:54:14.420 | INFO     | src.util.trainer:train:24 - Train Epoch: 30 [19200/60000 (32%)]	Loss: 0.001513
+2024-10-30 15:54:15.264 | INFO     | src.util.trainer:train:24 - Train Epoch: 30 [25600/60000 (43%)]	Loss: 0.002822
+2024-10-30 15:54:16.104 | INFO     | src.util.trainer:train:24 - Train Epoch: 30 [32000/60000 (53%)]	Loss: 0.000885
+2024-10-30 15:54:16.960 | INFO     | src.util.trainer:train:24 - Train Epoch: 30 [38400/60000 (64%)]	Loss: 0.005194
+2024-10-30 15:54:17.876 | INFO     | src.util.trainer:train:24 - Train Epoch: 30 [44800/60000 (75%)]	Loss: 0.000111
+2024-10-30 15:54:18.746 | INFO     | src.util.trainer:train:24 - Train Epoch: 30 [51200/60000 (85%)]	Loss: 0.060422
+2024-10-30 15:54:19.614 | INFO     | src.util.trainer:train:24 - Train Epoch: 30 [57600/60000 (96%)]	Loss: 0.001102
+2024-10-30 15:54:19.940 | INFO     | src.util.trainer:train:28 - ====> Epoch: 30 Average loss: 0.0059
+2024-10-30 15:54:19.952 | INFO     | src.util.trainer:train:24 - Train Epoch: 31 [0/60000 (0%)]	Loss: 0.000324
+2024-10-30 15:54:20.803 | INFO     | src.util.trainer:train:24 - Train Epoch: 31 [6400/60000 (11%)]	Loss: 0.000215
+2024-10-30 15:54:22.064 | INFO     | src.util.trainer:train:24 - Train Epoch: 31 [12800/60000 (21%)]	Loss: 0.000954
+2024-10-30 15:54:22.949 | INFO     | src.util.trainer:train:24 - Train Epoch: 31 [19200/60000 (32%)]	Loss: 0.003749
+2024-10-30 15:54:23.815 | INFO     | src.util.trainer:train:24 - Train Epoch: 31 [25600/60000 (43%)]	Loss: 0.000571
+2024-10-30 15:54:24.674 | INFO     | src.util.trainer:train:24 - Train Epoch: 31 [32000/60000 (53%)]	Loss: 0.000192
+2024-10-30 15:54:25.549 | INFO     | src.util.trainer:train:24 - Train Epoch: 31 [38400/60000 (64%)]	Loss: 0.000005
+2024-10-30 15:54:26.392 | INFO     | src.util.trainer:train:24 - Train Epoch: 31 [44800/60000 (75%)]	Loss: 0.000350
+2024-10-30 15:54:27.252 | INFO     | src.util.trainer:train:24 - Train Epoch: 31 [51200/60000 (85%)]	Loss: 0.000670
+2024-10-30 15:54:28.105 | INFO     | src.util.trainer:train:24 - Train Epoch: 31 [57600/60000 (96%)]	Loss: 0.000084
+2024-10-30 15:54:28.484 | INFO     | src.util.trainer:train:28 - ====> Epoch: 31 Average loss: 0.0051
+2024-10-30 15:54:28.498 | INFO     | src.util.trainer:train:24 - Train Epoch: 32 [0/60000 (0%)]	Loss: 0.000834
+2024-10-30 15:54:29.335 | INFO     | src.util.trainer:train:24 - Train Epoch: 32 [6400/60000 (11%)]	Loss: 0.000053
+2024-10-30 15:54:30.487 | INFO     | src.util.trainer:train:24 - Train Epoch: 32 [12800/60000 (21%)]	Loss: 0.000024
+2024-10-30 15:54:31.390 | INFO     | src.util.trainer:train:24 - Train Epoch: 32 [19200/60000 (32%)]	Loss: 0.003821
+2024-10-30 15:54:32.256 | INFO     | src.util.trainer:train:24 - Train Epoch: 32 [25600/60000 (43%)]	Loss: 0.000005
+2024-10-30 15:54:33.112 | INFO     | src.util.trainer:train:24 - Train Epoch: 32 [32000/60000 (53%)]	Loss: 0.064129
+2024-10-30 15:54:33.976 | INFO     | src.util.trainer:train:24 - Train Epoch: 32 [38400/60000 (64%)]	Loss: 0.000068
+2024-10-30 15:54:34.849 | INFO     | src.util.trainer:train:24 - Train Epoch: 32 [44800/60000 (75%)]	Loss: 0.001914
+2024-10-30 15:54:35.878 | INFO     | src.util.trainer:train:24 - Train Epoch: 32 [51200/60000 (85%)]	Loss: 0.001197
+2024-10-30 15:54:36.735 | INFO     | src.util.trainer:train:24 - Train Epoch: 32 [57600/60000 (96%)]	Loss: 0.000003
+2024-10-30 15:54:37.055 | INFO     | src.util.trainer:train:28 - ====> Epoch: 32 Average loss: 0.0039
+2024-10-30 15:54:37.068 | INFO     | src.util.trainer:train:24 - Train Epoch: 33 [0/60000 (0%)]	Loss: 0.000139
+2024-10-30 15:54:37.899 | INFO     | src.util.trainer:train:24 - Train Epoch: 33 [6400/60000 (11%)]	Loss: 0.000102
+2024-10-30 15:54:39.062 | INFO     | src.util.trainer:train:24 - Train Epoch: 33 [12800/60000 (21%)]	Loss: 0.003893
+2024-10-30 15:54:39.916 | INFO     | src.util.trainer:train:24 - Train Epoch: 33 [19200/60000 (32%)]	Loss: 0.000129
+2024-10-30 15:54:40.732 | INFO     | src.util.trainer:train:24 - Train Epoch: 33 [25600/60000 (43%)]	Loss: 0.002230
+2024-10-30 15:54:41.562 | INFO     | src.util.trainer:train:24 - Train Epoch: 33 [32000/60000 (53%)]	Loss: 0.000003
+2024-10-30 15:54:42.398 | INFO     | src.util.trainer:train:24 - Train Epoch: 33 [38400/60000 (64%)]	Loss: 0.000010
+2024-10-30 15:54:43.262 | INFO     | src.util.trainer:train:24 - Train Epoch: 33 [44800/60000 (75%)]	Loss: 0.001786
+2024-10-30 15:54:44.120 | INFO     | src.util.trainer:train:24 - Train Epoch: 33 [51200/60000 (85%)]	Loss: 0.001223
+2024-10-30 15:54:44.970 | INFO     | src.util.trainer:train:24 - Train Epoch: 33 [57600/60000 (96%)]	Loss: 0.000324
+2024-10-30 15:54:45.294 | INFO     | src.util.trainer:train:28 - ====> Epoch: 33 Average loss: 0.0025
+2024-10-30 15:54:45.306 | INFO     | src.util.trainer:train:24 - Train Epoch: 34 [0/60000 (0%)]	Loss: 0.000160
+2024-10-30 15:54:46.162 | INFO     | src.util.trainer:train:24 - Train Epoch: 34 [6400/60000 (11%)]	Loss: 0.000017
+2024-10-30 15:54:47.123 | INFO     | src.util.trainer:train:24 - Train Epoch: 34 [12800/60000 (21%)]	Loss: 0.000627
+2024-10-30 15:54:48.111 | INFO     | src.util.trainer:train:24 - Train Epoch: 34 [19200/60000 (32%)]	Loss: 0.000082
+2024-10-30 15:54:48.992 | INFO     | src.util.trainer:train:24 - Train Epoch: 34 [25600/60000 (43%)]	Loss: 0.000060
+2024-10-30 15:54:49.863 | INFO     | src.util.trainer:train:24 - Train Epoch: 34 [32000/60000 (53%)]	Loss: 0.001171
+2024-10-30 15:54:50.779 | INFO     | src.util.trainer:train:24 - Train Epoch: 34 [38400/60000 (64%)]	Loss: 0.000136
+2024-10-30 15:54:51.660 | INFO     | src.util.trainer:train:24 - Train Epoch: 34 [44800/60000 (75%)]	Loss: 0.007020
+2024-10-30 15:54:52.585 | INFO     | src.util.trainer:train:24 - Train Epoch: 34 [51200/60000 (85%)]	Loss: 0.000159
+2024-10-30 15:54:53.439 | INFO     | src.util.trainer:train:24 - Train Epoch: 34 [57600/60000 (96%)]	Loss: 0.000002
+2024-10-30 15:54:53.763 | INFO     | src.util.trainer:train:28 - ====> Epoch: 34 Average loss: 0.0041
+2024-10-30 15:54:53.775 | INFO     | src.util.trainer:train:24 - Train Epoch: 35 [0/60000 (0%)]	Loss: 0.000059
+2024-10-30 15:54:54.626 | INFO     | src.util.trainer:train:24 - Train Epoch: 35 [6400/60000 (11%)]	Loss: 0.000108
+2024-10-30 15:54:55.516 | INFO     | src.util.trainer:train:24 - Train Epoch: 35 [12800/60000 (21%)]	Loss: 0.000329
+2024-10-30 15:54:56.690 | INFO     | src.util.trainer:train:24 - Train Epoch: 35 [19200/60000 (32%)]	Loss: 0.000028
+2024-10-30 15:54:57.546 | INFO     | src.util.trainer:train:24 - Train Epoch: 35 [25600/60000 (43%)]	Loss: 0.000148
+2024-10-30 15:54:58.399 | INFO     | src.util.trainer:train:24 - Train Epoch: 35 [32000/60000 (53%)]	Loss: 0.013727
+2024-10-30 15:54:59.251 | INFO     | src.util.trainer:train:24 - Train Epoch: 35 [38400/60000 (64%)]	Loss: 0.000171
+2024-10-30 15:55:00.124 | INFO     | src.util.trainer:train:24 - Train Epoch: 35 [44800/60000 (75%)]	Loss: 0.000003
+2024-10-30 15:55:01.124 | INFO     | src.util.trainer:train:24 - Train Epoch: 35 [51200/60000 (85%)]	Loss: 0.000179
+2024-10-30 15:55:01.998 | INFO     | src.util.trainer:train:24 - Train Epoch: 35 [57600/60000 (96%)]	Loss: 0.000009
+2024-10-30 15:55:02.321 | INFO     | src.util.trainer:train:28 - ====> Epoch: 35 Average loss: 0.0017
+2024-10-30 15:55:02.335 | INFO     | src.util.trainer:train:24 - Train Epoch: 36 [0/60000 (0%)]	Loss: 0.000009
+2024-10-30 15:55:03.184 | INFO     | src.util.trainer:train:24 - Train Epoch: 36 [6400/60000 (11%)]	Loss: 0.001113
+2024-10-30 15:55:04.060 | INFO     | src.util.trainer:train:24 - Train Epoch: 36 [12800/60000 (21%)]	Loss: 0.010235
+2024-10-30 15:55:05.232 | INFO     | src.util.trainer:train:24 - Train Epoch: 36 [19200/60000 (32%)]	Loss: 0.000010
+2024-10-30 15:55:06.037 | INFO     | src.util.trainer:train:24 - Train Epoch: 36 [25600/60000 (43%)]	Loss: 0.003806
+2024-10-30 15:55:06.878 | INFO     | src.util.trainer:train:24 - Train Epoch: 36 [32000/60000 (53%)]	Loss: 0.000041
+2024-10-30 15:55:07.719 | INFO     | src.util.trainer:train:24 - Train Epoch: 36 [38400/60000 (64%)]	Loss: 0.002323
+2024-10-30 15:55:08.584 | INFO     | src.util.trainer:train:24 - Train Epoch: 36 [44800/60000 (75%)]	Loss: 0.000010
+2024-10-30 15:55:09.437 | INFO     | src.util.trainer:train:24 - Train Epoch: 36 [51200/60000 (85%)]	Loss: 0.035548
+2024-10-30 15:55:10.292 | INFO     | src.util.trainer:train:24 - Train Epoch: 36 [57600/60000 (96%)]	Loss: 0.000133
+2024-10-30 15:55:10.608 | INFO     | src.util.trainer:train:28 - ====> Epoch: 36 Average loss: 0.0080
+2024-10-30 15:55:10.622 | INFO     | src.util.trainer:train:24 - Train Epoch: 37 [0/60000 (0%)]	Loss: 0.005342
+2024-10-30 15:55:11.479 | INFO     | src.util.trainer:train:24 - Train Epoch: 37 [6400/60000 (11%)]	Loss: 0.001882
+2024-10-30 15:55:12.361 | INFO     | src.util.trainer:train:24 - Train Epoch: 37 [12800/60000 (21%)]	Loss: 0.000033
+2024-10-30 15:55:13.470 | INFO     | src.util.trainer:train:24 - Train Epoch: 37 [19200/60000 (32%)]	Loss: 0.000040
+2024-10-30 15:55:14.341 | INFO     | src.util.trainer:train:24 - Train Epoch: 37 [25600/60000 (43%)]	Loss: 0.001655
+2024-10-30 15:55:15.125 | INFO     | src.util.trainer:train:24 - Train Epoch: 37 [32000/60000 (53%)]	Loss: 0.000655
+2024-10-30 15:55:15.931 | INFO     | src.util.trainer:train:24 - Train Epoch: 37 [38400/60000 (64%)]	Loss: 0.000005
+2024-10-30 15:55:16.788 | INFO     | src.util.trainer:train:24 - Train Epoch: 37 [44800/60000 (75%)]	Loss: 0.000017
+2024-10-30 15:55:17.657 | INFO     | src.util.trainer:train:24 - Train Epoch: 37 [51200/60000 (85%)]	Loss: 0.000022
+2024-10-30 15:55:18.546 | INFO     | src.util.trainer:train:24 - Train Epoch: 37 [57600/60000 (96%)]	Loss: 0.000016
+2024-10-30 15:55:18.859 | INFO     | src.util.trainer:train:28 - ====> Epoch: 37 Average loss: 0.0023
+2024-10-30 15:55:18.872 | INFO     | src.util.trainer:train:24 - Train Epoch: 38 [0/60000 (0%)]	Loss: 0.000084
+2024-10-30 15:55:19.711 | INFO     | src.util.trainer:train:24 - Train Epoch: 38 [6400/60000 (11%)]	Loss: 0.000008
+2024-10-30 15:55:20.564 | INFO     | src.util.trainer:train:24 - Train Epoch: 38 [12800/60000 (21%)]	Loss: 0.000212
+2024-10-30 15:55:21.550 | INFO     | src.util.trainer:train:24 - Train Epoch: 38 [19200/60000 (32%)]	Loss: 0.000050
+2024-10-30 15:55:22.446 | INFO     | src.util.trainer:train:24 - Train Epoch: 38 [25600/60000 (43%)]	Loss: 0.002508
+2024-10-30 15:55:23.309 | INFO     | src.util.trainer:train:24 - Train Epoch: 38 [32000/60000 (53%)]	Loss: 0.000112
+2024-10-30 15:55:24.181 | INFO     | src.util.trainer:train:24 - Train Epoch: 38 [38400/60000 (64%)]	Loss: 0.002486
+2024-10-30 15:55:25.060 | INFO     | src.util.trainer:train:24 - Train Epoch: 38 [44800/60000 (75%)]	Loss: 0.000198
+2024-10-30 15:55:25.908 | INFO     | src.util.trainer:train:24 - Train Epoch: 38 [51200/60000 (85%)]	Loss: 0.001168
+2024-10-30 15:55:26.608 | INFO     | src.util.trainer:train:24 - Train Epoch: 38 [57600/60000 (96%)]	Loss: 0.002183
+2024-10-30 15:55:26.868 | INFO     | src.util.trainer:train:28 - ====> Epoch: 38 Average loss: 0.0026
+2024-10-30 15:55:26.881 | INFO     | src.util.trainer:train:24 - Train Epoch: 39 [0/60000 (0%)]	Loss: 0.000862
+2024-10-30 15:55:27.738 | INFO     | src.util.trainer:train:24 - Train Epoch: 39 [6400/60000 (11%)]	Loss: 0.001151
+2024-10-30 15:55:28.592 | INFO     | src.util.trainer:train:24 - Train Epoch: 39 [12800/60000 (21%)]	Loss: 0.000040
+2024-10-30 15:55:29.446 | INFO     | src.util.trainer:train:24 - Train Epoch: 39 [19200/60000 (32%)]	Loss: 0.000242
+2024-10-30 15:55:30.558 | INFO     | src.util.trainer:train:24 - Train Epoch: 39 [25600/60000 (43%)]	Loss: 0.000063
+2024-10-30 15:55:31.431 | INFO     | src.util.trainer:train:24 - Train Epoch: 39 [32000/60000 (53%)]	Loss: 0.007834
+2024-10-30 15:55:32.287 | INFO     | src.util.trainer:train:24 - Train Epoch: 39 [38400/60000 (64%)]	Loss: 0.000631
+2024-10-30 15:55:33.151 | INFO     | src.util.trainer:train:24 - Train Epoch: 39 [44800/60000 (75%)]	Loss: 0.004182
+2024-10-30 15:55:34.021 | INFO     | src.util.trainer:train:24 - Train Epoch: 39 [51200/60000 (85%)]	Loss: 0.001288
+2024-10-30 15:55:34.880 | INFO     | src.util.trainer:train:24 - Train Epoch: 39 [57600/60000 (96%)]	Loss: 0.002855
+2024-10-30 15:55:35.188 | INFO     | src.util.trainer:train:28 - ====> Epoch: 39 Average loss: 0.0069
+2024-10-30 15:55:35.201 | INFO     | src.util.trainer:train:24 - Train Epoch: 40 [0/60000 (0%)]	Loss: 0.000022
+2024-10-30 15:55:36.027 | INFO     | src.util.trainer:train:24 - Train Epoch: 40 [6400/60000 (11%)]	Loss: 0.000818
+2024-10-30 15:55:36.849 | INFO     | src.util.trainer:train:24 - Train Epoch: 40 [12800/60000 (21%)]	Loss: 0.003662
+2024-10-30 15:55:37.673 | INFO     | src.util.trainer:train:24 - Train Epoch: 40 [19200/60000 (32%)]	Loss: 0.000026
+2024-10-30 15:55:38.641 | INFO     | src.util.trainer:train:24 - Train Epoch: 40 [25600/60000 (43%)]	Loss: 0.001746
+2024-10-30 15:55:39.664 | INFO     | src.util.trainer:train:24 - Train Epoch: 40 [32000/60000 (53%)]	Loss: 0.000027
+2024-10-30 15:55:40.536 | INFO     | src.util.trainer:train:24 - Train Epoch: 40 [38400/60000 (64%)]	Loss: 0.000389
+2024-10-30 15:55:41.451 | INFO     | src.util.trainer:train:24 - Train Epoch: 40 [44800/60000 (75%)]	Loss: 0.000344
+2024-10-30 15:55:42.373 | INFO     | src.util.trainer:train:24 - Train Epoch: 40 [51200/60000 (85%)]	Loss: 0.000120
+2024-10-30 15:55:43.314 | INFO     | src.util.trainer:train:24 - Train Epoch: 40 [57600/60000 (96%)]	Loss: 0.000242
+2024-10-30 15:55:43.643 | INFO     | src.util.trainer:train:28 - ====> Epoch: 40 Average loss: 0.0026
+2024-10-30 15:55:43.655 | INFO     | src.util.trainer:train:24 - Train Epoch: 41 [0/60000 (0%)]	Loss: 0.000018
+2024-10-30 15:55:44.475 | INFO     | src.util.trainer:train:24 - Train Epoch: 41 [6400/60000 (11%)]	Loss: 0.000001
+2024-10-30 15:55:45.323 | INFO     | src.util.trainer:train:24 - Train Epoch: 41 [12800/60000 (21%)]	Loss: 0.000193
+2024-10-30 15:55:46.171 | INFO     | src.util.trainer:train:24 - Train Epoch: 41 [19200/60000 (32%)]	Loss: 0.000565
+2024-10-30 15:55:47.100 | INFO     | src.util.trainer:train:24 - Train Epoch: 41 [25600/60000 (43%)]	Loss: 0.000307
+2024-10-30 15:55:48.144 | INFO     | src.util.trainer:train:24 - Train Epoch: 41 [32000/60000 (53%)]	Loss: 0.000010
+2024-10-30 15:55:48.992 | INFO     | src.util.trainer:train:24 - Train Epoch: 41 [38400/60000 (64%)]	Loss: 0.000139
+2024-10-30 15:55:49.845 | INFO     | src.util.trainer:train:24 - Train Epoch: 41 [44800/60000 (75%)]	Loss: 0.001034
+2024-10-30 15:55:50.695 | INFO     | src.util.trainer:train:24 - Train Epoch: 41 [51200/60000 (85%)]	Loss: 0.000523
+2024-10-30 15:55:51.561 | INFO     | src.util.trainer:train:24 - Train Epoch: 41 [57600/60000 (96%)]	Loss: 0.000002
+2024-10-30 15:55:51.872 | INFO     | src.util.trainer:train:28 - ====> Epoch: 41 Average loss: 0.0007
+2024-10-30 15:55:51.884 | INFO     | src.util.trainer:train:24 - Train Epoch: 42 [0/60000 (0%)]	Loss: 0.000020
+2024-10-30 15:55:52.753 | INFO     | src.util.trainer:train:24 - Train Epoch: 42 [6400/60000 (11%)]	Loss: 0.000012
+2024-10-30 15:55:53.668 | INFO     | src.util.trainer:train:24 - Train Epoch: 42 [12800/60000 (21%)]	Loss: 0.000025
+2024-10-30 15:55:54.516 | INFO     | src.util.trainer:train:24 - Train Epoch: 42 [19200/60000 (32%)]	Loss: 0.000028
+2024-10-30 15:55:55.425 | INFO     | src.util.trainer:train:24 - Train Epoch: 42 [25600/60000 (43%)]	Loss: 0.000013
+2024-10-30 15:55:56.485 | INFO     | src.util.trainer:train:24 - Train Epoch: 42 [32000/60000 (53%)]	Loss: 0.000027
+2024-10-30 15:55:57.320 | INFO     | src.util.trainer:train:24 - Train Epoch: 42 [38400/60000 (64%)]	Loss: 0.000043
+2024-10-30 15:55:58.173 | INFO     | src.util.trainer:train:24 - Train Epoch: 42 [44800/60000 (75%)]	Loss: 0.000019
+2024-10-30 15:55:58.913 | INFO     | src.util.trainer:train:24 - Train Epoch: 42 [51200/60000 (85%)]	Loss: 0.000030
+2024-10-30 15:55:59.648 | INFO     | src.util.trainer:train:24 - Train Epoch: 42 [57600/60000 (96%)]	Loss: 0.000142
+2024-10-30 15:55:59.938 | INFO     | src.util.trainer:train:28 - ====> Epoch: 42 Average loss: 0.0001
+2024-10-30 15:55:59.950 | INFO     | src.util.trainer:train:24 - Train Epoch: 43 [0/60000 (0%)]	Loss: 0.000011
+2024-10-30 15:56:00.730 | INFO     | src.util.trainer:train:24 - Train Epoch: 43 [6400/60000 (11%)]	Loss: 0.000178
+2024-10-30 15:56:01.533 | INFO     | src.util.trainer:train:24 - Train Epoch: 43 [12800/60000 (21%)]	Loss: 0.000005
+2024-10-30 15:56:02.318 | INFO     | src.util.trainer:train:24 - Train Epoch: 43 [19200/60000 (32%)]	Loss: 0.000001
+2024-10-30 15:56:03.100 | INFO     | src.util.trainer:train:24 - Train Epoch: 43 [25600/60000 (43%)]	Loss: 0.000123
+2024-10-30 15:56:03.938 | INFO     | src.util.trainer:train:24 - Train Epoch: 43 [32000/60000 (53%)]	Loss: 0.000021
+2024-10-30 15:56:05.168 | INFO     | src.util.trainer:train:24 - Train Epoch: 43 [38400/60000 (64%)]	Loss: 0.000013
+2024-10-30 15:56:06.148 | INFO     | src.util.trainer:train:24 - Train Epoch: 43 [44800/60000 (75%)]	Loss: 0.000000
+2024-10-30 15:56:07.151 | INFO     | src.util.trainer:train:24 - Train Epoch: 43 [51200/60000 (85%)]	Loss: 0.009451
+2024-10-30 15:56:08.147 | INFO     | src.util.trainer:train:24 - Train Epoch: 43 [57600/60000 (96%)]	Loss: 0.000061
+2024-10-30 15:56:08.528 | INFO     | src.util.trainer:train:28 - ====> Epoch: 43 Average loss: 0.0048
+2024-10-30 15:56:08.541 | INFO     | src.util.trainer:train:24 - Train Epoch: 44 [0/60000 (0%)]	Loss: 0.003446
+2024-10-30 15:56:09.540 | INFO     | src.util.trainer:train:24 - Train Epoch: 44 [6400/60000 (11%)]	Loss: 0.000607
+2024-10-30 15:56:10.562 | INFO     | src.util.trainer:train:24 - Train Epoch: 44 [12800/60000 (21%)]	Loss: 0.030636
+2024-10-30 15:56:11.473 | INFO     | src.util.trainer:train:24 - Train Epoch: 44 [19200/60000 (32%)]	Loss: 0.014941
+2024-10-30 15:56:12.320 | INFO     | src.util.trainer:train:24 - Train Epoch: 44 [25600/60000 (43%)]	Loss: 0.000059
+2024-10-30 15:56:13.462 | INFO     | src.util.trainer:train:24 - Train Epoch: 44 [32000/60000 (53%)]	Loss: 0.000566
+2024-10-30 15:56:14.445 | INFO     | src.util.trainer:train:24 - Train Epoch: 44 [38400/60000 (64%)]	Loss: 0.000005
+2024-10-30 15:56:15.376 | INFO     | src.util.trainer:train:24 - Train Epoch: 44 [44800/60000 (75%)]	Loss: 0.000195
+2024-10-30 15:56:16.321 | INFO     | src.util.trainer:train:24 - Train Epoch: 44 [51200/60000 (85%)]	Loss: 0.010691
+2024-10-30 15:56:17.296 | INFO     | src.util.trainer:train:24 - Train Epoch: 44 [57600/60000 (96%)]	Loss: 0.000627
+2024-10-30 15:56:17.694 | INFO     | src.util.trainer:train:28 - ====> Epoch: 44 Average loss: 0.0090
+2024-10-30 15:56:17.713 | INFO     | src.util.trainer:train:24 - Train Epoch: 45 [0/60000 (0%)]	Loss: 0.000037
+2024-10-30 15:56:18.723 | INFO     | src.util.trainer:train:24 - Train Epoch: 45 [6400/60000 (11%)]	Loss: 0.000111
+2024-10-30 15:56:19.677 | INFO     | src.util.trainer:train:24 - Train Epoch: 45 [12800/60000 (21%)]	Loss: 0.000058
+2024-10-30 15:56:20.526 | INFO     | src.util.trainer:train:24 - Train Epoch: 45 [19200/60000 (32%)]	Loss: 0.000046
+2024-10-30 15:56:21.490 | INFO     | src.util.trainer:train:24 - Train Epoch: 45 [25600/60000 (43%)]	Loss: 0.000045
+2024-10-30 15:56:22.549 | INFO     | src.util.trainer:train:24 - Train Epoch: 45 [32000/60000 (53%)]	Loss: 0.000006
+2024-10-30 15:56:23.371 | INFO     | src.util.trainer:train:24 - Train Epoch: 45 [38400/60000 (64%)]	Loss: 0.000082
+2024-10-30 15:56:24.197 | INFO     | src.util.trainer:train:24 - Train Epoch: 45 [44800/60000 (75%)]	Loss: 0.000342
+2024-10-30 15:56:25.012 | INFO     | src.util.trainer:train:24 - Train Epoch: 45 [51200/60000 (85%)]	Loss: 0.000210
+2024-10-30 15:56:25.839 | INFO     | src.util.trainer:train:24 - Train Epoch: 45 [57600/60000 (96%)]	Loss: 0.007906
+2024-10-30 15:56:26.150 | INFO     | src.util.trainer:train:28 - ====> Epoch: 45 Average loss: 0.0019
+2024-10-30 15:56:26.162 | INFO     | src.util.trainer:train:24 - Train Epoch: 46 [0/60000 (0%)]	Loss: 0.000264
+2024-10-30 15:56:27.008 | INFO     | src.util.trainer:train:24 - Train Epoch: 46 [6400/60000 (11%)]	Loss: 0.000367
+2024-10-30 15:56:27.848 | INFO     | src.util.trainer:train:24 - Train Epoch: 46 [12800/60000 (21%)]	Loss: 0.000026
+2024-10-30 15:56:28.709 | INFO     | src.util.trainer:train:24 - Train Epoch: 46 [19200/60000 (32%)]	Loss: 0.000062
+2024-10-30 15:56:29.564 | INFO     | src.util.trainer:train:24 - Train Epoch: 46 [25600/60000 (43%)]	Loss: 0.000036
+2024-10-30 15:56:30.772 | INFO     | src.util.trainer:train:24 - Train Epoch: 46 [32000/60000 (53%)]	Loss: 0.000002
+2024-10-30 15:56:31.631 | INFO     | src.util.trainer:train:24 - Train Epoch: 46 [38400/60000 (64%)]	Loss: 0.000012
+2024-10-30 15:56:32.450 | INFO     | src.util.trainer:train:24 - Train Epoch: 46 [44800/60000 (75%)]	Loss: 0.000132
+2024-10-30 15:56:33.307 | INFO     | src.util.trainer:train:24 - Train Epoch: 46 [51200/60000 (85%)]	Loss: 0.000179
+2024-10-30 15:56:34.173 | INFO     | src.util.trainer:train:24 - Train Epoch: 46 [57600/60000 (96%)]	Loss: 0.000023
+2024-10-30 15:56:34.496 | INFO     | src.util.trainer:train:28 - ====> Epoch: 46 Average loss: 0.0009
+2024-10-30 15:56:34.508 | INFO     | src.util.trainer:train:24 - Train Epoch: 47 [0/60000 (0%)]	Loss: 0.000090
+2024-10-30 15:56:35.423 | INFO     | src.util.trainer:train:24 - Train Epoch: 47 [6400/60000 (11%)]	Loss: 0.000311
+2024-10-30 15:56:36.248 | INFO     | src.util.trainer:train:24 - Train Epoch: 47 [12800/60000 (21%)]	Loss: 0.001826
+2024-10-30 15:56:37.100 | INFO     | src.util.trainer:train:24 - Train Epoch: 47 [19200/60000 (32%)]	Loss: 0.000520
+2024-10-30 15:56:37.961 | INFO     | src.util.trainer:train:24 - Train Epoch: 47 [25600/60000 (43%)]	Loss: 0.000002
+2024-10-30 15:56:39.064 | INFO     | src.util.trainer:train:24 - Train Epoch: 47 [32000/60000 (53%)]	Loss: 0.002431
+2024-10-30 15:56:39.948 | INFO     | src.util.trainer:train:24 - Train Epoch: 47 [38400/60000 (64%)]	Loss: 0.025028
+2024-10-30 15:56:40.788 | INFO     | src.util.trainer:train:24 - Train Epoch: 47 [44800/60000 (75%)]	Loss: 0.000025
+2024-10-30 15:56:41.637 | INFO     | src.util.trainer:train:24 - Train Epoch: 47 [51200/60000 (85%)]	Loss: 0.000988
+2024-10-30 15:56:42.493 | INFO     | src.util.trainer:train:24 - Train Epoch: 47 [57600/60000 (96%)]	Loss: 0.003910
+2024-10-30 15:56:42.819 | INFO     | src.util.trainer:train:28 - ====> Epoch: 47 Average loss: 0.0059
+2024-10-30 15:56:42.834 | INFO     | src.util.trainer:train:24 - Train Epoch: 48 [0/60000 (0%)]	Loss: 0.000021
+2024-10-30 15:56:43.750 | INFO     | src.util.trainer:train:24 - Train Epoch: 48 [6400/60000 (11%)]	Loss: 0.000011
+2024-10-30 15:56:44.745 | INFO     | src.util.trainer:train:24 - Train Epoch: 48 [12800/60000 (21%)]	Loss: 0.000139
+2024-10-30 15:56:45.631 | INFO     | src.util.trainer:train:24 - Train Epoch: 48 [19200/60000 (32%)]	Loss: 0.000011
+2024-10-30 15:56:46.438 | INFO     | src.util.trainer:train:24 - Train Epoch: 48 [25600/60000 (43%)]	Loss: 0.000099
+2024-10-30 15:56:47.380 | INFO     | src.util.trainer:train:24 - Train Epoch: 48 [32000/60000 (53%)]	Loss: 0.000028
+2024-10-30 15:56:48.319 | INFO     | src.util.trainer:train:24 - Train Epoch: 48 [38400/60000 (64%)]	Loss: 0.000167
+2024-10-30 15:56:49.210 | INFO     | src.util.trainer:train:24 - Train Epoch: 48 [44800/60000 (75%)]	Loss: 0.000186
+2024-10-30 15:56:50.076 | INFO     | src.util.trainer:train:24 - Train Epoch: 48 [51200/60000 (85%)]	Loss: 0.000146
+2024-10-30 15:56:50.943 | INFO     | src.util.trainer:train:24 - Train Epoch: 48 [57600/60000 (96%)]	Loss: 0.000012
+2024-10-30 15:56:51.266 | INFO     | src.util.trainer:train:28 - ====> Epoch: 48 Average loss: 0.0027
+2024-10-30 15:56:51.278 | INFO     | src.util.trainer:train:24 - Train Epoch: 49 [0/60000 (0%)]	Loss: 0.000030
+2024-10-30 15:56:52.222 | INFO     | src.util.trainer:train:24 - Train Epoch: 49 [6400/60000 (11%)]	Loss: 0.000002
+2024-10-30 15:56:53.053 | INFO     | src.util.trainer:train:24 - Train Epoch: 49 [12800/60000 (21%)]	Loss: 0.000066
+2024-10-30 15:56:54.045 | INFO     | src.util.trainer:train:24 - Train Epoch: 49 [19200/60000 (32%)]	Loss: 0.000003
+2024-10-30 15:56:54.906 | INFO     | src.util.trainer:train:24 - Train Epoch: 49 [25600/60000 (43%)]	Loss: 0.001546
+2024-10-30 15:56:55.998 | INFO     | src.util.trainer:train:24 - Train Epoch: 49 [32000/60000 (53%)]	Loss: 0.002271
+2024-10-30 15:56:57.006 | INFO     | src.util.trainer:train:24 - Train Epoch: 49 [38400/60000 (64%)]	Loss: 0.000026
+2024-10-30 15:56:57.889 | INFO     | src.util.trainer:train:24 - Train Epoch: 49 [44800/60000 (75%)]	Loss: 0.000097
+2024-10-30 15:56:58.904 | INFO     | src.util.trainer:train:24 - Train Epoch: 49 [51200/60000 (85%)]	Loss: 0.000046
+2024-10-30 15:56:59.778 | INFO     | src.util.trainer:train:24 - Train Epoch: 49 [57600/60000 (96%)]	Loss: 0.000507
+2024-10-30 15:57:00.117 | INFO     | src.util.trainer:train:28 - ====> Epoch: 49 Average loss: 0.0029
+2024-10-30 15:57:00.130 | INFO     | src.util.trainer:train:24 - Train Epoch: 50 [0/60000 (0%)]	Loss: 0.000028
+2024-10-30 15:57:00.976 | INFO     | src.util.trainer:train:24 - Train Epoch: 50 [6400/60000 (11%)]	Loss: 0.000102
+2024-10-30 15:57:01.943 | INFO     | src.util.trainer:train:24 - Train Epoch: 50 [12800/60000 (21%)]	Loss: 0.000011
+2024-10-30 15:57:02.807 | INFO     | src.util.trainer:train:24 - Train Epoch: 50 [19200/60000 (32%)]	Loss: 0.000702
+2024-10-30 15:57:03.642 | INFO     | src.util.trainer:train:24 - Train Epoch: 50 [25600/60000 (43%)]	Loss: 0.000167
+2024-10-30 15:57:04.669 | INFO     | src.util.trainer:train:24 - Train Epoch: 50 [32000/60000 (53%)]	Loss: 0.000071
+2024-10-30 15:57:05.633 | INFO     | src.util.trainer:train:24 - Train Epoch: 50 [38400/60000 (64%)]	Loss: 0.003046
+2024-10-30 15:57:06.467 | INFO     | src.util.trainer:train:24 - Train Epoch: 50 [44800/60000 (75%)]	Loss: 0.000332
+2024-10-30 15:57:07.316 | INFO     | src.util.trainer:train:24 - Train Epoch: 50 [51200/60000 (85%)]	Loss: 0.000038
+2024-10-30 15:57:08.167 | INFO     | src.util.trainer:train:24 - Train Epoch: 50 [57600/60000 (96%)]	Loss: 0.006344
+2024-10-30 15:57:08.485 | INFO     | src.util.trainer:train:28 - ====> Epoch: 50 Average loss: 0.0029
+2024-10-30 15:57:08.497 | INFO     | src.util.trainer:train:24 - Train Epoch: 51 [0/60000 (0%)]	Loss: 0.000005
+2024-10-30 15:57:09.392 | INFO     | src.util.trainer:train:24 - Train Epoch: 51 [6400/60000 (11%)]	Loss: 0.000003
+2024-10-30 15:57:10.354 | INFO     | src.util.trainer:train:24 - Train Epoch: 51 [12800/60000 (21%)]	Loss: 0.001262
+2024-10-30 15:57:11.190 | INFO     | src.util.trainer:train:24 - Train Epoch: 51 [19200/60000 (32%)]	Loss: 0.000010
+2024-10-30 15:57:12.037 | INFO     | src.util.trainer:train:24 - Train Epoch: 51 [25600/60000 (43%)]	Loss: 0.000010
+2024-10-30 15:57:12.980 | INFO     | src.util.trainer:train:24 - Train Epoch: 51 [32000/60000 (53%)]	Loss: 0.000092
+2024-10-30 15:57:14.017 | INFO     | src.util.trainer:train:24 - Train Epoch: 51 [38400/60000 (64%)]	Loss: 0.017245
+2024-10-30 15:57:14.920 | INFO     | src.util.trainer:train:24 - Train Epoch: 51 [44800/60000 (75%)]	Loss: 0.064777
+2024-10-30 15:57:15.764 | INFO     | src.util.trainer:train:24 - Train Epoch: 51 [51200/60000 (85%)]	Loss: 0.000009
+2024-10-30 15:57:16.614 | INFO     | src.util.trainer:train:24 - Train Epoch: 51 [57600/60000 (96%)]	Loss: 0.000017
+2024-10-30 15:57:16.946 | INFO     | src.util.trainer:train:28 - ====> Epoch: 51 Average loss: 0.0034
+2024-10-30 15:57:16.960 | INFO     | src.util.trainer:train:24 - Train Epoch: 52 [0/60000 (0%)]	Loss: 0.001177
+2024-10-30 15:57:17.877 | INFO     | src.util.trainer:train:24 - Train Epoch: 52 [6400/60000 (11%)]	Loss: 0.000331
+2024-10-30 15:57:18.723 | INFO     | src.util.trainer:train:24 - Train Epoch: 52 [12800/60000 (21%)]	Loss: 0.000141
+2024-10-30 15:57:19.556 | INFO     | src.util.trainer:train:24 - Train Epoch: 52 [19200/60000 (32%)]	Loss: 0.000035
+2024-10-30 15:57:20.402 | INFO     | src.util.trainer:train:24 - Train Epoch: 52 [25600/60000 (43%)]	Loss: 0.010098
+2024-10-30 15:57:21.314 | INFO     | src.util.trainer:train:24 - Train Epoch: 52 [32000/60000 (53%)]	Loss: 0.000001
+2024-10-30 15:57:22.392 | INFO     | src.util.trainer:train:24 - Train Epoch: 52 [38400/60000 (64%)]	Loss: 0.013899
+2024-10-30 15:57:23.216 | INFO     | src.util.trainer:train:24 - Train Epoch: 52 [44800/60000 (75%)]	Loss: 0.000005
+2024-10-30 15:57:24.025 | INFO     | src.util.trainer:train:24 - Train Epoch: 52 [51200/60000 (85%)]	Loss: 0.000001
+2024-10-30 15:57:24.795 | INFO     | src.util.trainer:train:24 - Train Epoch: 52 [57600/60000 (96%)]	Loss: 0.000001
+2024-10-30 15:57:25.088 | INFO     | src.util.trainer:train:28 - ====> Epoch: 52 Average loss: 0.0035
+2024-10-30 15:57:25.101 | INFO     | src.util.trainer:train:24 - Train Epoch: 53 [0/60000 (0%)]	Loss: 0.000021
+2024-10-30 15:57:25.945 | INFO     | src.util.trainer:train:24 - Train Epoch: 53 [6400/60000 (11%)]	Loss: 0.000242
+2024-10-30 15:57:26.837 | INFO     | src.util.trainer:train:24 - Train Epoch: 53 [12800/60000 (21%)]	Loss: 0.000015
+2024-10-30 15:57:27.724 | INFO     | src.util.trainer:train:24 - Train Epoch: 53 [19200/60000 (32%)]	Loss: 0.000011
+2024-10-30 15:57:28.716 | INFO     | src.util.trainer:train:24 - Train Epoch: 53 [25600/60000 (43%)]	Loss: 0.000006
+2024-10-30 15:57:29.862 | INFO     | src.util.trainer:train:24 - Train Epoch: 53 [32000/60000 (53%)]	Loss: 0.012417
+2024-10-30 15:57:30.920 | INFO     | src.util.trainer:train:24 - Train Epoch: 53 [38400/60000 (64%)]	Loss: 0.003429
+2024-10-30 15:57:31.744 | INFO     | src.util.trainer:train:24 - Train Epoch: 53 [44800/60000 (75%)]	Loss: 0.000030
+2024-10-30 15:57:32.566 | INFO     | src.util.trainer:train:24 - Train Epoch: 53 [51200/60000 (85%)]	Loss: 0.000111
+2024-10-30 15:57:33.395 | INFO     | src.util.trainer:train:24 - Train Epoch: 53 [57600/60000 (96%)]	Loss: 0.000002
+2024-10-30 15:57:33.704 | INFO     | src.util.trainer:train:28 - ====> Epoch: 53 Average loss: 0.0017
+2024-10-30 15:57:33.716 | INFO     | src.util.trainer:train:24 - Train Epoch: 54 [0/60000 (0%)]	Loss: 0.000018
+2024-10-30 15:57:34.567 | INFO     | src.util.trainer:train:24 - Train Epoch: 54 [6400/60000 (11%)]	Loss: 0.000048
+2024-10-30 15:57:35.574 | INFO     | src.util.trainer:train:24 - Train Epoch: 54 [12800/60000 (21%)]	Loss: 0.000053
+2024-10-30 15:57:36.426 | INFO     | src.util.trainer:train:24 - Train Epoch: 54 [19200/60000 (32%)]	Loss: 0.000003
+2024-10-30 15:57:37.259 | INFO     | src.util.trainer:train:24 - Train Epoch: 54 [25600/60000 (43%)]	Loss: 0.000539
+2024-10-30 15:57:38.097 | INFO     | src.util.trainer:train:24 - Train Epoch: 54 [32000/60000 (53%)]	Loss: 0.000317
+2024-10-30 15:57:39.024 | INFO     | src.util.trainer:train:24 - Train Epoch: 54 [38400/60000 (64%)]	Loss: 0.001306
+2024-10-30 15:57:40.114 | INFO     | src.util.trainer:train:24 - Train Epoch: 54 [44800/60000 (75%)]	Loss: 0.000426
+2024-10-30 15:57:40.958 | INFO     | src.util.trainer:train:24 - Train Epoch: 54 [51200/60000 (85%)]	Loss: 0.000222
+2024-10-30 15:57:41.816 | INFO     | src.util.trainer:train:24 - Train Epoch: 54 [57600/60000 (96%)]	Loss: 0.003556
+2024-10-30 15:57:42.139 | INFO     | src.util.trainer:train:28 - ====> Epoch: 54 Average loss: 0.0026
+2024-10-30 15:57:42.152 | INFO     | src.util.trainer:train:24 - Train Epoch: 55 [0/60000 (0%)]	Loss: 0.020567
+2024-10-30 15:57:42.997 | INFO     | src.util.trainer:train:24 - Train Epoch: 55 [6400/60000 (11%)]	Loss: 0.000026
+2024-10-30 15:57:43.862 | INFO     | src.util.trainer:train:24 - Train Epoch: 55 [12800/60000 (21%)]	Loss: 0.000154
+2024-10-30 15:57:44.680 | INFO     | src.util.trainer:train:24 - Train Epoch: 55 [19200/60000 (32%)]	Loss: 0.000827
+2024-10-30 15:57:45.486 | INFO     | src.util.trainer:train:24 - Train Epoch: 55 [25600/60000 (43%)]	Loss: 0.000007
+2024-10-30 15:57:46.309 | INFO     | src.util.trainer:train:24 - Train Epoch: 55 [32000/60000 (53%)]	Loss: 0.003493
+2024-10-30 15:57:47.152 | INFO     | src.util.trainer:train:24 - Train Epoch: 55 [38400/60000 (64%)]	Loss: 0.000108
+2024-10-30 15:57:48.304 | INFO     | src.util.trainer:train:24 - Train Epoch: 55 [44800/60000 (75%)]	Loss: 0.000034
+2024-10-30 15:57:49.157 | INFO     | src.util.trainer:train:24 - Train Epoch: 55 [51200/60000 (85%)]	Loss: 0.000006
+2024-10-30 15:57:50.009 | INFO     | src.util.trainer:train:24 - Train Epoch: 55 [57600/60000 (96%)]	Loss: 0.000030
+2024-10-30 15:57:50.345 | INFO     | src.util.trainer:train:28 - ====> Epoch: 55 Average loss: 0.0044
+2024-10-30 15:57:50.358 | INFO     | src.util.trainer:train:24 - Train Epoch: 56 [0/60000 (0%)]	Loss: 0.012808
+2024-10-30 15:57:51.187 | INFO     | src.util.trainer:train:24 - Train Epoch: 56 [6400/60000 (11%)]	Loss: 0.002791
+2024-10-30 15:57:52.174 | INFO     | src.util.trainer:train:24 - Train Epoch: 56 [12800/60000 (21%)]	Loss: 0.000015
+2024-10-30 15:57:53.093 | INFO     | src.util.trainer:train:24 - Train Epoch: 56 [19200/60000 (32%)]	Loss: 0.010818
+2024-10-30 15:57:53.932 | INFO     | src.util.trainer:train:24 - Train Epoch: 56 [25600/60000 (43%)]	Loss: 0.000031
+2024-10-30 15:57:54.753 | INFO     | src.util.trainer:train:24 - Train Epoch: 56 [32000/60000 (53%)]	Loss: 0.000066
+2024-10-30 15:57:55.628 | INFO     | src.util.trainer:train:24 - Train Epoch: 56 [38400/60000 (64%)]	Loss: 0.000039
+2024-10-30 15:57:56.772 | INFO     | src.util.trainer:train:24 - Train Epoch: 56 [44800/60000 (75%)]	Loss: 0.000057
+2024-10-30 15:57:57.616 | INFO     | src.util.trainer:train:24 - Train Epoch: 56 [51200/60000 (85%)]	Loss: 0.000015
+2024-10-30 15:57:58.461 | INFO     | src.util.trainer:train:24 - Train Epoch: 56 [57600/60000 (96%)]	Loss: 0.000063
+2024-10-30 15:57:58.776 | INFO     | src.util.trainer:train:28 - ====> Epoch: 56 Average loss: 0.0025
+2024-10-30 15:57:58.790 | INFO     | src.util.trainer:train:24 - Train Epoch: 57 [0/60000 (0%)]	Loss: 0.000829
+2024-10-30 15:57:59.643 | INFO     | src.util.trainer:train:24 - Train Epoch: 57 [6400/60000 (11%)]	Loss: 0.000020
+2024-10-30 15:58:00.569 | INFO     | src.util.trainer:train:24 - Train Epoch: 57 [12800/60000 (21%)]	Loss: 0.000068
+2024-10-30 15:58:01.435 | INFO     | src.util.trainer:train:24 - Train Epoch: 57 [19200/60000 (32%)]	Loss: 0.000004
+2024-10-30 15:58:02.322 | INFO     | src.util.trainer:train:24 - Train Epoch: 57 [25600/60000 (43%)]	Loss: 0.000078
+2024-10-30 15:58:03.213 | INFO     | src.util.trainer:train:24 - Train Epoch: 57 [32000/60000 (53%)]	Loss: 0.000003
+2024-10-30 15:58:04.196 | INFO     | src.util.trainer:train:24 - Train Epoch: 57 [38400/60000 (64%)]	Loss: 0.000010
+2024-10-30 15:58:05.364 | INFO     | src.util.trainer:train:24 - Train Epoch: 57 [44800/60000 (75%)]	Loss: 0.000015
+2024-10-30 15:58:06.267 | INFO     | src.util.trainer:train:24 - Train Epoch: 57 [51200/60000 (85%)]	Loss: 0.002483
+2024-10-30 15:58:07.168 | INFO     | src.util.trainer:train:24 - Train Epoch: 57 [57600/60000 (96%)]	Loss: 0.001635
+2024-10-30 15:58:07.505 | INFO     | src.util.trainer:train:28 - ====> Epoch: 57 Average loss: 0.0028
+2024-10-30 15:58:07.519 | INFO     | src.util.trainer:train:24 - Train Epoch: 58 [0/60000 (0%)]	Loss: 0.004621
+2024-10-30 15:58:08.383 | INFO     | src.util.trainer:train:24 - Train Epoch: 58 [6400/60000 (11%)]	Loss: 0.000016
+2024-10-30 15:58:09.391 | INFO     | src.util.trainer:train:24 - Train Epoch: 58 [12800/60000 (21%)]	Loss: 0.000096
+2024-10-30 15:58:10.330 | INFO     | src.util.trainer:train:24 - Train Epoch: 58 [19200/60000 (32%)]	Loss: 0.000002
+2024-10-30 15:58:11.274 | INFO     | src.util.trainer:train:24 - Train Epoch: 58 [25600/60000 (43%)]	Loss: 0.000001
+2024-10-30 15:58:12.222 | INFO     | src.util.trainer:train:24 - Train Epoch: 58 [32000/60000 (53%)]	Loss: 0.000014
+2024-10-30 15:58:13.546 | INFO     | src.util.trainer:train:24 - Train Epoch: 58 [38400/60000 (64%)]	Loss: 0.000152
+2024-10-30 15:58:14.506 | INFO     | src.util.trainer:train:24 - Train Epoch: 58 [44800/60000 (75%)]	Loss: 0.007849
+2024-10-30 15:58:15.489 | INFO     | src.util.trainer:train:24 - Train Epoch: 58 [51200/60000 (85%)]	Loss: 0.000890
+2024-10-30 15:58:16.491 | INFO     | src.util.trainer:train:24 - Train Epoch: 58 [57600/60000 (96%)]	Loss: 0.004873
+2024-10-30 15:58:16.871 | INFO     | src.util.trainer:train:28 - ====> Epoch: 58 Average loss: 0.0025
+2024-10-30 15:58:16.885 | INFO     | src.util.trainer:train:24 - Train Epoch: 59 [0/60000 (0%)]	Loss: 0.000016
+2024-10-30 15:58:17.875 | INFO     | src.util.trainer:train:24 - Train Epoch: 59 [6400/60000 (11%)]	Loss: 0.000839
+2024-10-30 15:58:18.849 | INFO     | src.util.trainer:train:24 - Train Epoch: 59 [12800/60000 (21%)]	Loss: 0.000061
+2024-10-30 15:58:19.825 | INFO     | src.util.trainer:train:24 - Train Epoch: 59 [19200/60000 (32%)]	Loss: 0.000080
+2024-10-30 15:58:20.796 | INFO     | src.util.trainer:train:24 - Train Epoch: 59 [25600/60000 (43%)]	Loss: 0.000135
+2024-10-30 15:58:22.097 | INFO     | src.util.trainer:train:24 - Train Epoch: 59 [32000/60000 (53%)]	Loss: 0.000432
+2024-10-30 15:58:23.061 | INFO     | src.util.trainer:train:24 - Train Epoch: 59 [38400/60000 (64%)]	Loss: 0.000130
+2024-10-30 15:58:24.030 | INFO     | src.util.trainer:train:24 - Train Epoch: 59 [44800/60000 (75%)]	Loss: 0.000014
+2024-10-30 15:58:25.001 | INFO     | src.util.trainer:train:24 - Train Epoch: 59 [51200/60000 (85%)]	Loss: 0.000441
+2024-10-30 15:58:25.987 | INFO     | src.util.trainer:train:24 - Train Epoch: 59 [57600/60000 (96%)]	Loss: 0.000301
+2024-10-30 15:58:26.347 | INFO     | src.util.trainer:train:28 - ====> Epoch: 59 Average loss: 0.0035
+2024-10-30 15:58:26.361 | INFO     | src.util.trainer:train:24 - Train Epoch: 60 [0/60000 (0%)]	Loss: 0.000199
+2024-10-30 15:58:27.317 | INFO     | src.util.trainer:train:24 - Train Epoch: 60 [6400/60000 (11%)]	Loss: 0.000643
+2024-10-30 15:58:28.316 | INFO     | src.util.trainer:train:24 - Train Epoch: 60 [12800/60000 (21%)]	Loss: 0.000105
+2024-10-30 15:58:29.288 | INFO     | src.util.trainer:train:24 - Train Epoch: 60 [19200/60000 (32%)]	Loss: 0.000548
+2024-10-30 15:58:30.353 | INFO     | src.util.trainer:train:24 - Train Epoch: 60 [25600/60000 (43%)]	Loss: 0.000100
+2024-10-30 15:58:31.226 | INFO     | src.util.trainer:train:24 - Train Epoch: 60 [32000/60000 (53%)]	Loss: 0.000007
+2024-10-30 15:58:32.077 | INFO     | src.util.trainer:train:24 - Train Epoch: 60 [38400/60000 (64%)]	Loss: 0.000237
+2024-10-30 15:58:32.930 | INFO     | src.util.trainer:train:24 - Train Epoch: 60 [44800/60000 (75%)]	Loss: 0.000477
+2024-10-30 15:58:33.782 | INFO     | src.util.trainer:train:24 - Train Epoch: 60 [51200/60000 (85%)]	Loss: 0.000272
+2024-10-30 15:58:34.700 | INFO     | src.util.trainer:train:24 - Train Epoch: 60 [57600/60000 (96%)]	Loss: 0.000062
+2024-10-30 15:58:35.011 | INFO     | src.util.trainer:train:28 - ====> Epoch: 60 Average loss: 0.0011
+2024-10-30 15:58:35.024 | INFO     | src.util.trainer:train:24 - Train Epoch: 61 [0/60000 (0%)]	Loss: 0.000002
+2024-10-30 15:58:35.872 | INFO     | src.util.trainer:train:24 - Train Epoch: 61 [6400/60000 (11%)]	Loss: 0.000003
+2024-10-30 15:58:36.720 | INFO     | src.util.trainer:train:24 - Train Epoch: 61 [12800/60000 (21%)]	Loss: 0.000001
+2024-10-30 15:58:37.561 | INFO     | src.util.trainer:train:24 - Train Epoch: 61 [19200/60000 (32%)]	Loss: 0.000007
+2024-10-30 15:58:38.500 | INFO     | src.util.trainer:train:24 - Train Epoch: 61 [25600/60000 (43%)]	Loss: 0.000028
+2024-10-30 15:58:39.426 | INFO     | src.util.trainer:train:24 - Train Epoch: 61 [32000/60000 (53%)]	Loss: 0.000090
+2024-10-30 15:58:40.318 | INFO     | src.util.trainer:train:24 - Train Epoch: 61 [38400/60000 (64%)]	Loss: 0.000008
+2024-10-30 15:58:41.212 | INFO     | src.util.trainer:train:24 - Train Epoch: 61 [44800/60000 (75%)]	Loss: 0.000063
+2024-10-30 15:58:42.157 | INFO     | src.util.trainer:train:24 - Train Epoch: 61 [51200/60000 (85%)]	Loss: 0.000003
+2024-10-30 15:58:43.025 | INFO     | src.util.trainer:train:24 - Train Epoch: 61 [57600/60000 (96%)]	Loss: 0.000006
+2024-10-30 15:58:43.347 | INFO     | src.util.trainer:train:28 - ====> Epoch: 61 Average loss: 0.0001
+2024-10-30 15:58:43.360 | INFO     | src.util.trainer:train:24 - Train Epoch: 62 [0/60000 (0%)]	Loss: 0.000004
+2024-10-30 15:58:44.176 | INFO     | src.util.trainer:train:24 - Train Epoch: 62 [6400/60000 (11%)]	Loss: 0.000036
+2024-10-30 15:58:45.024 | INFO     | src.util.trainer:train:24 - Train Epoch: 62 [12800/60000 (21%)]	Loss: 0.000000
+2024-10-30 15:58:45.875 | INFO     | src.util.trainer:train:24 - Train Epoch: 62 [19200/60000 (32%)]	Loss: 0.000005
+2024-10-30 15:58:46.728 | INFO     | src.util.trainer:train:24 - Train Epoch: 62 [25600/60000 (43%)]	Loss: 0.000001
+2024-10-30 15:58:47.593 | INFO     | src.util.trainer:train:24 - Train Epoch: 62 [32000/60000 (53%)]	Loss: 0.000009
+2024-10-30 15:58:48.475 | INFO     | src.util.trainer:train:24 - Train Epoch: 62 [38400/60000 (64%)]	Loss: 0.000016
+2024-10-30 15:58:49.520 | INFO     | src.util.trainer:train:24 - Train Epoch: 62 [44800/60000 (75%)]	Loss: 0.000012
+2024-10-30 15:58:50.489 | INFO     | src.util.trainer:train:24 - Train Epoch: 62 [51200/60000 (85%)]	Loss: 0.000028
+2024-10-30 15:58:51.458 | INFO     | src.util.trainer:train:24 - Train Epoch: 62 [57600/60000 (96%)]	Loss: 0.000018
+2024-10-30 15:58:51.833 | INFO     | src.util.trainer:train:28 - ====> Epoch: 62 Average loss: 0.0000
+2024-10-30 15:58:51.848 | INFO     | src.util.trainer:train:24 - Train Epoch: 63 [0/60000 (0%)]	Loss: 0.000008
+2024-10-30 15:58:52.789 | INFO     | src.util.trainer:train:24 - Train Epoch: 63 [6400/60000 (11%)]	Loss: 0.000008
+2024-10-30 15:58:53.751 | INFO     | src.util.trainer:train:24 - Train Epoch: 63 [12800/60000 (21%)]	Loss: 0.000012
+2024-10-30 15:58:54.715 | INFO     | src.util.trainer:train:24 - Train Epoch: 63 [19200/60000 (32%)]	Loss: 0.000004
+2024-10-30 15:58:55.735 | INFO     | src.util.trainer:train:24 - Train Epoch: 63 [25600/60000 (43%)]	Loss: 0.000001
+2024-10-30 15:58:56.688 | INFO     | src.util.trainer:train:24 - Train Epoch: 63 [32000/60000 (53%)]	Loss: 0.000001
+2024-10-30 15:58:57.550 | INFO     | src.util.trainer:train:24 - Train Epoch: 63 [38400/60000 (64%)]	Loss: 0.000005
+2024-10-30 15:58:58.384 | INFO     | src.util.trainer:train:24 - Train Epoch: 63 [44800/60000 (75%)]	Loss: 0.000002
+2024-10-30 15:58:59.192 | INFO     | src.util.trainer:train:24 - Train Epoch: 63 [51200/60000 (85%)]	Loss: 0.000001
+2024-10-30 15:59:00.028 | INFO     | src.util.trainer:train:24 - Train Epoch: 63 [57600/60000 (96%)]	Loss: 0.000000
+2024-10-30 15:59:00.356 | INFO     | src.util.trainer:train:28 - ====> Epoch: 63 Average loss: 0.0000
+2024-10-30 15:59:00.370 | INFO     | src.util.trainer:train:24 - Train Epoch: 64 [0/60000 (0%)]	Loss: 0.000001
+2024-10-30 15:59:01.213 | INFO     | src.util.trainer:train:24 - Train Epoch: 64 [6400/60000 (11%)]	Loss: 0.000001
+2024-10-30 15:59:02.070 | INFO     | src.util.trainer:train:24 - Train Epoch: 64 [12800/60000 (21%)]	Loss: 0.000010
+2024-10-30 15:59:02.929 | INFO     | src.util.trainer:train:24 - Train Epoch: 64 [19200/60000 (32%)]	Loss: 0.000001
+2024-10-30 15:59:03.784 | INFO     | src.util.trainer:train:24 - Train Epoch: 64 [25600/60000 (43%)]	Loss: 0.000000
+2024-10-30 15:59:04.650 | INFO     | src.util.trainer:train:24 - Train Epoch: 64 [32000/60000 (53%)]	Loss: 0.000010
+2024-10-30 15:59:05.531 | INFO     | src.util.trainer:train:24 - Train Epoch: 64 [38400/60000 (64%)]	Loss: 0.000001
+2024-10-30 15:59:06.388 | INFO     | src.util.trainer:train:24 - Train Epoch: 64 [44800/60000 (75%)]	Loss: 0.000025
+2024-10-30 15:59:07.215 | INFO     | src.util.trainer:train:24 - Train Epoch: 64 [51200/60000 (85%)]	Loss: 0.000020
+2024-10-30 15:59:08.024 | INFO     | src.util.trainer:train:24 - Train Epoch: 64 [57600/60000 (96%)]	Loss: 0.000041
+2024-10-30 15:59:08.330 | INFO     | src.util.trainer:train:28 - ====> Epoch: 64 Average loss: 0.0000
+2024-10-30 15:59:08.344 | INFO     | src.util.trainer:train:24 - Train Epoch: 65 [0/60000 (0%)]	Loss: 0.000019
+2024-10-30 15:59:09.208 | INFO     | src.util.trainer:train:24 - Train Epoch: 65 [6400/60000 (11%)]	Loss: 0.000002
+2024-10-30 15:59:10.059 | INFO     | src.util.trainer:train:24 - Train Epoch: 65 [12800/60000 (21%)]	Loss: 0.000029
+2024-10-30 15:59:10.892 | INFO     | src.util.trainer:train:24 - Train Epoch: 65 [19200/60000 (32%)]	Loss: 0.000002
+2024-10-30 15:59:11.726 | INFO     | src.util.trainer:train:24 - Train Epoch: 65 [25600/60000 (43%)]	Loss: 0.000013
+2024-10-30 15:59:12.555 | INFO     | src.util.trainer:train:24 - Train Epoch: 65 [32000/60000 (53%)]	Loss: 0.000009
+2024-10-30 15:59:13.396 | INFO     | src.util.trainer:train:24 - Train Epoch: 65 [38400/60000 (64%)]	Loss: 0.000004
+2024-10-30 15:59:14.338 | INFO     | src.util.trainer:train:24 - Train Epoch: 65 [44800/60000 (75%)]	Loss: 0.000005
+2024-10-30 15:59:15.197 | INFO     | src.util.trainer:train:24 - Train Epoch: 65 [51200/60000 (85%)]	Loss: 0.000002
+2024-10-30 15:59:16.048 | INFO     | src.util.trainer:train:24 - Train Epoch: 65 [57600/60000 (96%)]	Loss: 0.000014
+2024-10-30 15:59:16.368 | INFO     | src.util.trainer:train:28 - ====> Epoch: 65 Average loss: 0.0000
+2024-10-30 15:59:16.381 | INFO     | src.util.trainer:train:24 - Train Epoch: 66 [0/60000 (0%)]	Loss: 0.000003
+2024-10-30 15:59:17.233 | INFO     | src.util.trainer:train:24 - Train Epoch: 66 [6400/60000 (11%)]	Loss: 0.000003
+2024-10-30 15:59:18.093 | INFO     | src.util.trainer:train:24 - Train Epoch: 66 [12800/60000 (21%)]	Loss: 0.000003
+2024-10-30 15:59:18.951 | INFO     | src.util.trainer:train:24 - Train Epoch: 66 [19200/60000 (32%)]	Loss: 0.000000
+2024-10-30 15:59:19.800 | INFO     | src.util.trainer:train:24 - Train Epoch: 66 [25600/60000 (43%)]	Loss: 0.000005
+2024-10-30 15:59:20.652 | INFO     | src.util.trainer:train:24 - Train Epoch: 66 [32000/60000 (53%)]	Loss: 0.000003
+2024-10-30 15:59:21.507 | INFO     | src.util.trainer:train:24 - Train Epoch: 66 [38400/60000 (64%)]	Loss: 0.000013
+2024-10-30 15:59:22.353 | INFO     | src.util.trainer:train:24 - Train Epoch: 66 [44800/60000 (75%)]	Loss: 0.000000
+2024-10-30 15:59:23.274 | INFO     | src.util.trainer:train:24 - Train Epoch: 66 [51200/60000 (85%)]	Loss: 0.000004
+2024-10-30 15:59:24.127 | INFO     | src.util.trainer:train:24 - Train Epoch: 66 [57600/60000 (96%)]	Loss: 0.000000
+2024-10-30 15:59:24.445 | INFO     | src.util.trainer:train:28 - ====> Epoch: 66 Average loss: 0.0000
+2024-10-30 15:59:24.458 | INFO     | src.util.trainer:train:24 - Train Epoch: 67 [0/60000 (0%)]	Loss: 0.000012
+2024-10-30 15:59:25.312 | INFO     | src.util.trainer:train:24 - Train Epoch: 67 [6400/60000 (11%)]	Loss: 0.000000
+2024-10-30 15:59:26.166 | INFO     | src.util.trainer:train:24 - Train Epoch: 67 [12800/60000 (21%)]	Loss: 0.000001
+2024-10-30 15:59:27.055 | INFO     | src.util.trainer:train:24 - Train Epoch: 67 [19200/60000 (32%)]	Loss: 0.000009
+2024-10-30 15:59:27.916 | INFO     | src.util.trainer:train:24 - Train Epoch: 67 [25600/60000 (43%)]	Loss: 0.000001
+2024-10-30 15:59:28.779 | INFO     | src.util.trainer:train:24 - Train Epoch: 67 [32000/60000 (53%)]	Loss: 0.000000
+2024-10-30 15:59:29.641 | INFO     | src.util.trainer:train:24 - Train Epoch: 67 [38400/60000 (64%)]	Loss: 0.000001
+2024-10-30 15:59:30.496 | INFO     | src.util.trainer:train:24 - Train Epoch: 67 [44800/60000 (75%)]	Loss: 0.000002
+2024-10-30 15:59:31.362 | INFO     | src.util.trainer:train:24 - Train Epoch: 67 [51200/60000 (85%)]	Loss: 0.000008
+2024-10-30 15:59:32.220 | INFO     | src.util.trainer:train:24 - Train Epoch: 67 [57600/60000 (96%)]	Loss: 0.000005
+2024-10-30 15:59:32.538 | INFO     | src.util.trainer:train:28 - ====> Epoch: 67 Average loss: 0.0000
+2024-10-30 15:59:32.551 | INFO     | src.util.trainer:train:24 - Train Epoch: 68 [0/60000 (0%)]	Loss: 0.000002
+2024-10-30 15:59:33.399 | INFO     | src.util.trainer:train:24 - Train Epoch: 68 [6400/60000 (11%)]	Loss: 0.000002
+2024-10-30 15:59:34.248 | INFO     | src.util.trainer:train:24 - Train Epoch: 68 [12800/60000 (21%)]	Loss: 0.000005
+2024-10-30 15:59:35.101 | INFO     | src.util.trainer:train:24 - Train Epoch: 68 [19200/60000 (32%)]	Loss: 0.000001
+2024-10-30 15:59:35.958 | INFO     | src.util.trainer:train:24 - Train Epoch: 68 [25600/60000 (43%)]	Loss: 0.000001
+2024-10-30 15:59:36.811 | INFO     | src.util.trainer:train:24 - Train Epoch: 68 [32000/60000 (53%)]	Loss: 0.000000
+2024-10-30 15:59:37.669 | INFO     | src.util.trainer:train:24 - Train Epoch: 68 [38400/60000 (64%)]	Loss: 0.000002
+2024-10-30 15:59:38.523 | INFO     | src.util.trainer:train:24 - Train Epoch: 68 [44800/60000 (75%)]	Loss: 0.000000
+2024-10-30 15:59:39.370 | INFO     | src.util.trainer:train:24 - Train Epoch: 68 [51200/60000 (85%)]	Loss: 0.000000
+2024-10-30 15:59:40.232 | INFO     | src.util.trainer:train:24 - Train Epoch: 68 [57600/60000 (96%)]	Loss: 0.000001
+2024-10-30 15:59:40.564 | INFO     | src.util.trainer:train:28 - ====> Epoch: 68 Average loss: 0.0000
+2024-10-30 15:59:40.577 | INFO     | src.util.trainer:train:24 - Train Epoch: 69 [0/60000 (0%)]	Loss: 0.000001
+2024-10-30 15:59:41.432 | INFO     | src.util.trainer:train:24 - Train Epoch: 69 [6400/60000 (11%)]	Loss: 0.000001
+2024-10-30 15:59:42.289 | INFO     | src.util.trainer:train:24 - Train Epoch: 69 [12800/60000 (21%)]	Loss: 0.000004
+2024-10-30 15:59:43.143 | INFO     | src.util.trainer:train:24 - Train Epoch: 69 [19200/60000 (32%)]	Loss: 0.000001
+2024-10-30 15:59:44.002 | INFO     | src.util.trainer:train:24 - Train Epoch: 69 [25600/60000 (43%)]	Loss: 0.000001
+2024-10-30 15:59:44.852 | INFO     | src.util.trainer:train:24 - Train Epoch: 69 [32000/60000 (53%)]	Loss: 0.000000
+2024-10-30 15:59:45.704 | INFO     | src.util.trainer:train:24 - Train Epoch: 69 [38400/60000 (64%)]	Loss: 0.000000
+2024-10-30 15:59:46.552 | INFO     | src.util.trainer:train:24 - Train Epoch: 69 [44800/60000 (75%)]	Loss: 0.000001
+2024-10-30 15:59:47.408 | INFO     | src.util.trainer:train:24 - Train Epoch: 69 [51200/60000 (85%)]	Loss: 0.000003
+2024-10-30 15:59:48.265 | INFO     | src.util.trainer:train:24 - Train Epoch: 69 [57600/60000 (96%)]	Loss: 0.000000
+2024-10-30 15:59:48.592 | INFO     | src.util.trainer:train:28 - ====> Epoch: 69 Average loss: 0.0000
+2024-10-30 15:59:48.605 | INFO     | src.util.trainer:train:24 - Train Epoch: 70 [0/60000 (0%)]	Loss: 0.000002
+2024-10-30 15:59:49.461 | INFO     | src.util.trainer:train:24 - Train Epoch: 70 [6400/60000 (11%)]	Loss: 0.000001
+2024-10-30 15:59:50.313 | INFO     | src.util.trainer:train:24 - Train Epoch: 70 [12800/60000 (21%)]	Loss: 0.000003
+2024-10-30 15:59:51.165 | INFO     | src.util.trainer:train:24 - Train Epoch: 70 [19200/60000 (32%)]	Loss: 0.000003
+2024-10-30 15:59:52.018 | INFO     | src.util.trainer:train:24 - Train Epoch: 70 [25600/60000 (43%)]	Loss: 0.000000
+2024-10-30 15:59:52.887 | INFO     | src.util.trainer:train:24 - Train Epoch: 70 [32000/60000 (53%)]	Loss: 0.000001
+2024-10-30 15:59:53.735 | INFO     | src.util.trainer:train:24 - Train Epoch: 70 [38400/60000 (64%)]	Loss: 0.000000
+2024-10-30 15:59:54.584 | INFO     | src.util.trainer:train:24 - Train Epoch: 70 [44800/60000 (75%)]	Loss: 0.000000
+2024-10-30 15:59:55.433 | INFO     | src.util.trainer:train:24 - Train Epoch: 70 [51200/60000 (85%)]	Loss: 0.000000
+2024-10-30 15:59:56.280 | INFO     | src.util.trainer:train:24 - Train Epoch: 70 [57600/60000 (96%)]	Loss: 0.000000
+2024-10-30 15:59:56.607 | INFO     | src.util.trainer:train:28 - ====> Epoch: 70 Average loss: 0.0000
+2024-10-30 15:59:56.631 | INFO     | src.util.trainer:train:24 - Train Epoch: 71 [0/60000 (0%)]	Loss: 0.000001
+2024-10-30 15:59:57.576 | INFO     | src.util.trainer:train:24 - Train Epoch: 71 [6400/60000 (11%)]	Loss: 0.000002
+2024-10-30 15:59:58.434 | INFO     | src.util.trainer:train:24 - Train Epoch: 71 [12800/60000 (21%)]	Loss: 0.000001
+2024-10-30 15:59:59.294 | INFO     | src.util.trainer:train:24 - Train Epoch: 71 [19200/60000 (32%)]	Loss: 0.000000
+2024-10-30 16:00:00.153 | INFO     | src.util.trainer:train:24 - Train Epoch: 71 [25600/60000 (43%)]	Loss: 0.000000
+2024-10-30 16:00:01.017 | INFO     | src.util.trainer:train:24 - Train Epoch: 71 [32000/60000 (53%)]	Loss: 0.000000
+2024-10-30 16:00:01.931 | INFO     | src.util.trainer:train:24 - Train Epoch: 71 [38400/60000 (64%)]	Loss: 0.000000
+2024-10-30 16:00:02.783 | INFO     | src.util.trainer:train:24 - Train Epoch: 71 [44800/60000 (75%)]	Loss: 0.000001
+2024-10-30 16:00:03.632 | INFO     | src.util.trainer:train:24 - Train Epoch: 71 [51200/60000 (85%)]	Loss: 0.000000
+2024-10-30 16:00:04.484 | INFO     | src.util.trainer:train:24 - Train Epoch: 71 [57600/60000 (96%)]	Loss: 0.000000
+2024-10-30 16:00:04.798 | INFO     | src.util.trainer:train:28 - ====> Epoch: 71 Average loss: 0.0000
+2024-10-30 16:00:04.811 | INFO     | src.util.trainer:train:24 - Train Epoch: 72 [0/60000 (0%)]	Loss: 0.000000
+2024-10-30 16:00:05.661 | INFO     | src.util.trainer:train:24 - Train Epoch: 72 [6400/60000 (11%)]	Loss: 0.000000
+2024-10-30 16:00:06.526 | INFO     | src.util.trainer:train:24 - Train Epoch: 72 [12800/60000 (21%)]	Loss: 0.000001
+2024-10-30 16:00:07.379 | INFO     | src.util.trainer:train:24 - Train Epoch: 72 [19200/60000 (32%)]	Loss: 0.000000
+2024-10-30 16:00:08.228 | INFO     | src.util.trainer:train:24 - Train Epoch: 72 [25600/60000 (43%)]	Loss: 0.000001
+2024-10-30 16:00:09.155 | INFO     | src.util.trainer:train:24 - Train Epoch: 72 [32000/60000 (53%)]	Loss: 0.000000
+2024-10-30 16:00:10.054 | INFO     | src.util.trainer:train:24 - Train Epoch: 72 [38400/60000 (64%)]	Loss: 0.000000
+2024-10-30 16:00:10.957 | INFO     | src.util.trainer:train:24 - Train Epoch: 72 [44800/60000 (75%)]	Loss: 0.000001
+2024-10-30 16:00:11.808 | INFO     | src.util.trainer:train:24 - Train Epoch: 72 [51200/60000 (85%)]	Loss: 0.000000
+2024-10-30 16:00:12.659 | INFO     | src.util.trainer:train:24 - Train Epoch: 72 [57600/60000 (96%)]	Loss: 0.000000
+2024-10-30 16:00:13.011 | INFO     | src.util.trainer:train:28 - ====> Epoch: 72 Average loss: 0.0000
+2024-10-30 16:00:13.024 | INFO     | src.util.trainer:train:24 - Train Epoch: 73 [0/60000 (0%)]	Loss: 0.000000
+2024-10-30 16:00:13.873 | INFO     | src.util.trainer:train:24 - Train Epoch: 73 [6400/60000 (11%)]	Loss: 0.000001
+2024-10-30 16:00:14.733 | INFO     | src.util.trainer:train:24 - Train Epoch: 73 [12800/60000 (21%)]	Loss: 0.000000
+2024-10-30 16:00:15.593 | INFO     | src.util.trainer:train:24 - Train Epoch: 73 [19200/60000 (32%)]	Loss: 0.000000
+2024-10-30 16:00:16.452 | INFO     | src.util.trainer:train:24 - Train Epoch: 73 [25600/60000 (43%)]	Loss: 0.000001
+2024-10-30 16:00:17.310 | INFO     | src.util.trainer:train:24 - Train Epoch: 73 [32000/60000 (53%)]	Loss: 0.000000
+2024-10-30 16:00:18.168 | INFO     | src.util.trainer:train:24 - Train Epoch: 73 [38400/60000 (64%)]	Loss: 0.000000
+2024-10-30 16:00:19.048 | INFO     | src.util.trainer:train:24 - Train Epoch: 73 [44800/60000 (75%)]	Loss: 0.000000
+2024-10-30 16:00:19.895 | INFO     | src.util.trainer:train:24 - Train Epoch: 73 [51200/60000 (85%)]	Loss: 0.000000
+2024-10-30 16:00:20.742 | INFO     | src.util.trainer:train:24 - Train Epoch: 73 [57600/60000 (96%)]	Loss: 0.000000
+2024-10-30 16:00:21.056 | INFO     | src.util.trainer:train:28 - ====> Epoch: 73 Average loss: 0.0000
+2024-10-30 16:00:21.070 | INFO     | src.util.trainer:train:24 - Train Epoch: 74 [0/60000 (0%)]	Loss: 0.000000
+2024-10-30 16:00:21.938 | INFO     | src.util.trainer:train:24 - Train Epoch: 74 [6400/60000 (11%)]	Loss: 0.000000
+2024-10-30 16:00:22.797 | INFO     | src.util.trainer:train:24 - Train Epoch: 74 [12800/60000 (21%)]	Loss: 0.000000
+2024-10-30 16:00:23.746 | INFO     | src.util.trainer:train:24 - Train Epoch: 74 [19200/60000 (32%)]	Loss: 0.000001
+2024-10-30 16:00:24.620 | INFO     | src.util.trainer:train:24 - Train Epoch: 74 [25600/60000 (43%)]	Loss: 0.000000
+2024-10-30 16:00:25.464 | INFO     | src.util.trainer:train:24 - Train Epoch: 74 [32000/60000 (53%)]	Loss: 0.000000
+2024-10-30 16:00:26.320 | INFO     | src.util.trainer:train:24 - Train Epoch: 74 [38400/60000 (64%)]	Loss: 0.000000
+2024-10-30 16:00:27.129 | INFO     | src.util.trainer:train:24 - Train Epoch: 74 [44800/60000 (75%)]	Loss: 0.000001
+2024-10-30 16:00:28.011 | INFO     | src.util.trainer:train:24 - Train Epoch: 74 [51200/60000 (85%)]	Loss: 0.000000
+2024-10-30 16:00:28.864 | INFO     | src.util.trainer:train:24 - Train Epoch: 74 [57600/60000 (96%)]	Loss: 0.000000
+2024-10-30 16:00:29.178 | INFO     | src.util.trainer:train:28 - ====> Epoch: 74 Average loss: 0.0000
+2024-10-30 16:00:29.190 | INFO     | src.util.trainer:train:24 - Train Epoch: 75 [0/60000 (0%)]	Loss: 0.000000
+2024-10-30 16:00:30.031 | INFO     | src.util.trainer:train:24 - Train Epoch: 75 [6400/60000 (11%)]	Loss: 0.000000
+2024-10-30 16:00:30.884 | INFO     | src.util.trainer:train:24 - Train Epoch: 75 [12800/60000 (21%)]	Loss: 0.000000
+2024-10-30 16:00:31.744 | INFO     | src.util.trainer:train:24 - Train Epoch: 75 [19200/60000 (32%)]	Loss: 0.000000
+2024-10-30 16:00:32.608 | INFO     | src.util.trainer:train:24 - Train Epoch: 75 [25600/60000 (43%)]	Loss: 0.000000
+2024-10-30 16:00:33.471 | INFO     | src.util.trainer:train:24 - Train Epoch: 75 [32000/60000 (53%)]	Loss: 0.000000
+2024-10-30 16:00:34.322 | INFO     | src.util.trainer:train:24 - Train Epoch: 75 [38400/60000 (64%)]	Loss: 0.000000
+2024-10-30 16:00:35.182 | INFO     | src.util.trainer:train:24 - Train Epoch: 75 [44800/60000 (75%)]	Loss: 0.000000
+2024-10-30 16:00:36.050 | INFO     | src.util.trainer:train:24 - Train Epoch: 75 [51200/60000 (85%)]	Loss: 0.000000
+2024-10-30 16:00:36.980 | INFO     | src.util.trainer:train:24 - Train Epoch: 75 [57600/60000 (96%)]	Loss: 0.000000
+2024-10-30 16:00:37.299 | INFO     | src.util.trainer:train:28 - ====> Epoch: 75 Average loss: 0.0000
+2024-10-30 16:00:37.313 | INFO     | src.util.trainer:train:24 - Train Epoch: 76 [0/60000 (0%)]	Loss: 0.000000
+2024-10-30 16:00:38.154 | INFO     | src.util.trainer:train:24 - Train Epoch: 76 [6400/60000 (11%)]	Loss: 0.000000
+2024-10-30 16:00:39.009 | INFO     | src.util.trainer:train:24 - Train Epoch: 76 [12800/60000 (21%)]	Loss: 0.000000
+2024-10-30 16:00:39.857 | INFO     | src.util.trainer:train:24 - Train Epoch: 76 [19200/60000 (32%)]	Loss: 0.000000
+2024-10-30 16:00:40.732 | INFO     | src.util.trainer:train:24 - Train Epoch: 76 [25600/60000 (43%)]	Loss: 0.000000
+2024-10-30 16:00:41.600 | INFO     | src.util.trainer:train:24 - Train Epoch: 76 [32000/60000 (53%)]	Loss: 0.000000
+2024-10-30 16:00:42.449 | INFO     | src.util.trainer:train:24 - Train Epoch: 76 [38400/60000 (64%)]	Loss: 0.000000
+2024-10-30 16:00:43.301 | INFO     | src.util.trainer:train:24 - Train Epoch: 76 [44800/60000 (75%)]	Loss: 0.000000
+2024-10-30 16:00:44.153 | INFO     | src.util.trainer:train:24 - Train Epoch: 76 [51200/60000 (85%)]	Loss: 0.000000
+2024-10-30 16:00:45.011 | INFO     | src.util.trainer:train:24 - Train Epoch: 76 [57600/60000 (96%)]	Loss: 0.000000
+2024-10-30 16:00:45.328 | INFO     | src.util.trainer:train:28 - ====> Epoch: 76 Average loss: 0.0002
+2024-10-30 16:00:45.341 | INFO     | src.util.trainer:train:24 - Train Epoch: 77 [0/60000 (0%)]	Loss: 0.005640
+2024-10-30 16:00:46.169 | INFO     | src.util.trainer:train:24 - Train Epoch: 77 [6400/60000 (11%)]	Loss: 0.366837
+2024-10-30 16:00:47.175 | INFO     | src.util.trainer:train:24 - Train Epoch: 77 [12800/60000 (21%)]	Loss: 0.007745
+2024-10-30 16:00:48.124 | INFO     | src.util.trainer:train:24 - Train Epoch: 77 [19200/60000 (32%)]	Loss: 0.017238
+2024-10-30 16:00:49.026 | INFO     | src.util.trainer:train:24 - Train Epoch: 77 [25600/60000 (43%)]	Loss: 0.002825
+2024-10-30 16:00:49.898 | INFO     | src.util.trainer:train:24 - Train Epoch: 77 [32000/60000 (53%)]	Loss: 0.000182
+2024-10-30 16:00:50.768 | INFO     | src.util.trainer:train:24 - Train Epoch: 77 [38400/60000 (64%)]	Loss: 0.000028
+2024-10-30 16:00:51.642 | INFO     | src.util.trainer:train:24 - Train Epoch: 77 [44800/60000 (75%)]	Loss: 0.000048
+2024-10-30 16:00:52.516 | INFO     | src.util.trainer:train:24 - Train Epoch: 77 [51200/60000 (85%)]	Loss: 0.020455
+2024-10-30 16:00:53.389 | INFO     | src.util.trainer:train:24 - Train Epoch: 77 [57600/60000 (96%)]	Loss: 0.000000
+2024-10-30 16:00:53.714 | INFO     | src.util.trainer:train:28 - ====> Epoch: 77 Average loss: 0.0138
+2024-10-30 16:00:53.728 | INFO     | src.util.trainer:train:24 - Train Epoch: 78 [0/60000 (0%)]	Loss: 0.000003
+2024-10-30 16:00:54.578 | INFO     | src.util.trainer:train:24 - Train Epoch: 78 [6400/60000 (11%)]	Loss: 0.000000
+2024-10-30 16:00:55.439 | INFO     | src.util.trainer:train:24 - Train Epoch: 78 [12800/60000 (21%)]	Loss: 0.000021
+2024-10-30 16:00:56.298 | INFO     | src.util.trainer:train:24 - Train Epoch: 78 [19200/60000 (32%)]	Loss: 0.002394
+2024-10-30 16:00:57.169 | INFO     | src.util.trainer:train:24 - Train Epoch: 78 [25600/60000 (43%)]	Loss: 0.000373
+2024-10-30 16:00:58.043 | INFO     | src.util.trainer:train:24 - Train Epoch: 78 [32000/60000 (53%)]	Loss: 0.000000
+2024-10-30 16:00:58.910 | INFO     | src.util.trainer:train:24 - Train Epoch: 78 [38400/60000 (64%)]	Loss: 0.000000
+2024-10-30 16:00:59.772 | INFO     | src.util.trainer:train:24 - Train Epoch: 78 [44800/60000 (75%)]	Loss: 0.002268
+2024-10-30 16:01:00.635 | INFO     | src.util.trainer:train:24 - Train Epoch: 78 [51200/60000 (85%)]	Loss: 0.000028
+2024-10-30 16:01:01.510 | INFO     | src.util.trainer:train:24 - Train Epoch: 78 [57600/60000 (96%)]	Loss: 0.000001
+2024-10-30 16:01:01.832 | INFO     | src.util.trainer:train:28 - ====> Epoch: 78 Average loss: 0.0010
+2024-10-30 16:01:01.853 | INFO     | src.util.trainer:train:24 - Train Epoch: 79 [0/60000 (0%)]	Loss: 0.000007
+2024-10-30 16:01:02.742 | INFO     | src.util.trainer:train:24 - Train Epoch: 79 [6400/60000 (11%)]	Loss: 0.000002
+2024-10-30 16:01:03.596 | INFO     | src.util.trainer:train:24 - Train Epoch: 79 [12800/60000 (21%)]	Loss: 0.000009
+2024-10-30 16:01:04.448 | INFO     | src.util.trainer:train:24 - Train Epoch: 79 [19200/60000 (32%)]	Loss: 0.000001
+2024-10-30 16:01:05.307 | INFO     | src.util.trainer:train:24 - Train Epoch: 79 [25600/60000 (43%)]	Loss: 0.000764
+2024-10-30 16:01:06.218 | INFO     | src.util.trainer:train:24 - Train Epoch: 79 [32000/60000 (53%)]	Loss: 0.000834
+2024-10-30 16:01:07.160 | INFO     | src.util.trainer:train:24 - Train Epoch: 79 [38400/60000 (64%)]	Loss: 0.000013
+2024-10-30 16:01:08.024 | INFO     | src.util.trainer:train:24 - Train Epoch: 79 [44800/60000 (75%)]	Loss: 0.000010
+2024-10-30 16:01:08.895 | INFO     | src.util.trainer:train:24 - Train Epoch: 79 [51200/60000 (85%)]	Loss: 0.000003
+2024-10-30 16:01:09.758 | INFO     | src.util.trainer:train:24 - Train Epoch: 79 [57600/60000 (96%)]	Loss: 0.000122
+2024-10-30 16:01:10.093 | INFO     | src.util.trainer:train:28 - ====> Epoch: 79 Average loss: 0.0004
+2024-10-30 16:01:10.093 | INFO     | src.util.trainer:test:31 - -- start testing --
+2024-10-30 16:01:10.970 | INFO     | src.util.trainer:test:48 - ====> Test set: Average loss: 0.1663, Accuracy: 9805/10000 (98.05%)
+2024-10-30 16:01:10.973 | INFO     | __main__:main:36 - Model parameters saved to /home/yxueat/course@ust/elce6910c/hw2/Multi-View-Image-Classification/save/ckpt/model_params.pth
+2024-10-30 16:01:10.975 | INFO     | __main__:<module>:62 - Total time: 660.58 seconds

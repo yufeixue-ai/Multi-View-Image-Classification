@@ -1,0 +1,37 @@
+2024-10-30 19:53:44.377 | INFO     | __main__:<module>:70 - args: Namespace(config='/home/yxueat/course@ust/elce6910c/hw2/Multi-View-Image-Classification/config/main.yml')
+2024-10-30 19:53:44.379 | INFO     | __main__:<module>:76 - config:
+{
+    "base": {
+        "seed": 42,
+        "root_path": "/home/yxueat/course@ust/elce6910c/hw2/Multi-View-Image-Classification",
+        "cuda_visible_devices": 1,
+        "mode": "eval_org"
+    },
+    "model": {
+        "name": "FourViewClassifier4MNIST"
+    },
+    "train": {
+        "ckpt": "save/ckpt/model_params.pth",
+        "epochs": 80,
+        "lr": 0.001,
+        "log_interval": 100
+    },
+    "eval": {
+        "ckpt": "save/ckpt/model_params.pth",
+        "qbit": 1
+    },
+    "dataset": {
+        "dir": "dataset/mnist",
+        "batch_size": 64,
+        "shuffle": true,
+        "download": true
+    },
+    "quant": {
+        "bit": 8
+    }
+}
+2024-10-30 19:53:44.425 | INFO     | __main__:main:22 - device: cuda
+2024-10-30 19:53:46.115 | INFO     | __main__:main:47 - Model weights loaded from /home/yxueat/course@ust/elce6910c/hw2/Multi-View-Image-Classification/save/ckpt/model_params.pth
+2024-10-30 19:53:46.206 | INFO     | src.util.trainer:test:31 - -- start testing --
+2024-10-30 19:53:48.119 | INFO     | src.util.trainer:test:60 - ====> Test set: Average loss: 2.3147, Accuracy: 958/10000 (9.58%) @ 1bit quantization
+2024-10-30 19:53:48.119 | INFO     | __main__:<module>:83 - Total time: 3.74 seconds
