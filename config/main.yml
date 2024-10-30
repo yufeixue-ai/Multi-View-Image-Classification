@@ -1,0 +1,23 @@
+base:
+  seed: &seed 42
+  root_path: /home/yxueat/course@ust/elce6910c/hw2/Multi-View-Image-Classification
+  cuda_visible_devices: 1
+  mode: train_quant  # train_org, eval_org, train_quant, eval_quant
+model:
+  name: FourViewClassifier4MNIST
+train:
+  ckpt: save/ckpt/model_params.pth
+  qbit: 8
+  epochs: 70
+  lr: 0.001
+  log_interval: 10
+eval:
+  ckpt: save/ckpt/model_params.pth
+  qbit: 1
+dataset:
+  dir: dataset/mnist
+  batch_size: 2048
+  shuffle: true
+  download: true
+quant:
+  bit: 8
